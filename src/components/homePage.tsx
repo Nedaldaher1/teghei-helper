@@ -68,43 +68,7 @@ export default function HomePage() {
   return (
     <div className="relative">
       {/* الشاشة التوضيحية الأولى */}
-      <motion.div
-        id="intro-overlay"
-        className="fixed inset-0 bg-black/90 z-50 flex flex-col items-center justify-center p-4 transition-opacity duration-500"
-        initial={{ opacity: 1 }}
-        animate={{ opacity: 1 }}
-      >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto text-center"
-        >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
-            صفحة التعريف الشخصي والمبادرة التعليمية
-          </h2>
-          
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 mb-8">
-            <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed mb-4">
-              هذه الصفحة هي مساحة تعريفية عني (عبد الرحمن صيفي) والمبادرة التعليمية التي أطلقها (منصة ملخصاتي). 
-              ستجد هنا رحلتي التعليمية، أهدافي، رؤيتي للمستقبل، والمشاريع التي أعمل عليها.
-            </p>
-            <p className="text-base sm:text-lg md:text-xl text-sky-300 font-medium">
-              انقر على الزر أدناه للانتقال مباشرة إلى المحتوى الرئيسي للصفحة.
-            </p>
-          </div>
-          
-          <motion.button
-            id="skip-intro"
-            className="mt-4 px-8 py-3 sm:px-10 sm:py-4 bg-sky-600 hover:bg-sky-700 text-white font-bold text-lg sm:text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={hideIntroOverlay}
-          >
-            الانتقال إلى المحتوى الرئيسي
-          </motion.button>
-        </motion.div>
-      </motion.div>
+
 
       {/* القسم الأول: مقدمة مع فيديو خلفي */}
       <section className="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden">
