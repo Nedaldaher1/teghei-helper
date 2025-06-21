@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطة مشروع NestJS التفاعلية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Dev Blueprint -->
+    <!-- Application Structure Plan: تم تصميم التطبيق كهيكل من صفحة واحدة مع شريط تنقل جانبي ثابت وقسم محتوى رئيسي. يسمح هذا التصميم للمطورين بالقفز مباشرة إلى أي قسم من الخطة (مثل الإعداد، مرجع الـ API، أو مخطط قاعدة البيانات) دون فقدان السياق. الهدف هو محاكاة تجربة مواقع التوثيق الحديثة، مما يجعل استكشاف الخطة الفنية أمراً سهلاً وغير خطي. -->
+    <!-- Visualization & Content Choices: تم تحويل الخطة النصية إلى هيكل بصري باستخدام Tailwind CSS. التفاعل الرئيسي هو "مستكشف مرجع الـ API" الديناميكي، الذي يسمح للمستخدمين بالنقر على نقطة نهاية (endpoint) لعرض تفاصيلها (الطلب، الاستجابة، الأخطاء). تم استخدام كتل الأكواد المنسقة بشكل جيد لتوضيح أوامر الـ shell ومخططات قاعدة البيانات. لم يتم استخدام أي رسوم بيانية لأن المحتوى المصدر تقني بحت. الاختيارات تهدف إلى تحويل وثيقة ثابتة إلى أداة تفاعلية. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .api-endpoint-item.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            text-align: left;
+            direction: ltr;
+        }
+        .method-post { background-color: #16a34a; }
+        .method-get { background-color: #2563eb; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="w-full md:w-64 bg-slate-800 text-white p-4 md:p-6 transition-all duration-300 md:h-screen md:sticky top-0">
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-bold">خطة المشروع</h1>
+                <button id="menu-toggle" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <nav id="nav-menu" class="hidden md:block">
+                <ul class="space-y-2">
+                    <li><a href="#overview" class="nav-link block font-semibold py-2 px-4 rounded hover:bg-slate-700 transition-colors">نظرة عامة</a></li>
+                    <li><a href="#setup" class="nav-link block font-semibold py-2 px-4 rounded hover:bg-slate-700 transition-colors">إعداد المشروع</a></li>
+                    <li><a href="#core-features" class="nav-link block font-semibold py-2 px-4 rounded hover:bg-slate-700 transition-colors">الميزات الأساسية</a></li>
+                    <li><a href="#versioning" class="nav-link block font-semibold py-2 px-4 rounded hover:bg-slate-700 transition-colors">إصدارات الـ API</a></li>
+                    <li><a href="#api-reference" class="nav-link block font-semibold py-2 px-4 rounded hover:bg-slate-700 transition-colors">مرجع الـ API</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-4 sm:p-6 md:p-10">
+            <!-- Overview Section -->
+            <section id="overview" class="mb-12">
+                <h2 class="text-3xl font-bold border-b-4 border-blue-500 pb-2 mb-6">نظرة عامة على المشروع</h2>
+                <div class="bg-white p-6 rounded-lg shadow-sm space-y-4">
+                    <p class="text-lg">هذا التطبيق التفاعلي يقدم خطة عمل مفصلة لبناء الواجهة الخلفية (Backend) لتطبيق ويب تعليمي باستخدام إطار العمل <span class="font-bold text-blue-600">NestJS</span>. الهدف هو توفير أساس قوي، منظم، وقابل للتوسعة.</p>
+                    <p>تم تصميم هذه الخطة لتكون بمثابة "عقد" واضح ودليل شامل لمطوري الواجهة الأمامية والخلفية، حيث توضح هيكلة المشروع، مخطط قاعدة البيانات، نقاط النهاية للـ API، استراتيجيات التعامل مع المصادقة، الدفع، وإصدارات الـ API المختلفة.</p>
+                </div>
+            </section>
+
+            <!-- Project Setup Section -->
+            <section id="setup" class="mb-12">
+                <h2 class="text-3xl font-bold border-b-4 border-blue-500 pb-2 mb-6">المرحلة الأولى: إعداد المشروع</h2>
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-4">1. إنشاء المشروع وهيكلة الوحدات</h3>
+                        <p class="mb-4">نبدأ بإنشاء مشروع NestJS جديد وتقسيمه إلى وحدات منطقية (Modules) لجعل الصيانة والتطوير أسهل في المستقبل.</p>
+                        <pre class="bg-slate-900 text-white rounded-md p-4 text-sm font-mono">
+# Install NestJS CLI
+npm i -g @nestjs/cli
+
+# Create a new project
+nest new educational-backend
+cd educational-backend
+
+# Generate core modules
+nest g module auth
+nest g module users
+nest g module subjects
+nest g module payments
+                        </pre>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-4">2. إعداد قاعدة البيانات مع Prisma</h3>
+                        <p class="mb-4">نستخدم Prisma كـ ORM للتعامل مع قاعدة البيانات، لما يوفره من أمان للأنواع (Type Safety) وسهولة في كتابة الاستعلامات.</p>
+                        <h4 class="font-semibold mt-4 mb-2">مخطط قاعدة البيانات (schema.prisma):</h4>
+                        <pre class="bg-slate-900 text-white rounded-md p-4 text-sm font-mono">
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  password     String
+  isSubscribed Boolean   @default(false)
+  subscription Subscription?
+}
+
+model Subject {
+  id          String     @id @default(cuid())
+  name        String
+  description String?
+  semesters   Semester[]
+}
+
+model Semester {
+  id           String        @id @default(cuid())
+  name         String
+  subjectId    String
+  subject      Subject       @relation(fields: [subjectId], references: [id])
+  contentItems ContentItem[]
+}
+
+model ContentItem {
+  id          String    @id @default(cuid())
+  title       String
+  type        String
+  content     Json
+  semesterId  String
+  semester    Semester  @relation(fields: [semesterId], references: [id])
+}
+
+model Subscription {
+  id                   String    @id @default(cuid())
+  userId               String    @unique
+  user                 User      @relation(fields: [userId], references: [id])
+  stripeCustomerId     String    @unique
+}
+                        </pre>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Core Features Section -->
+            <section id="core-features" class="mb-12">
+                 <h2 class="text-3xl font-bold border-b-4 border-blue-500 pb-2 mb-6">الميزات الأساسية (المراحل ٢-٤)</h2>
+                 <div class="space-y-8">
+                     <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-4">نظام المصادقة (Authentication)</h3>
+                        <p>بناء نظام لتسجيل الدخول وإنشاء حسابات جديدة باستخدام JWT (JSON Web Tokens) لتأمين نقاط النهاية التي تتطلب صلاحيات.</p>
+                     </div>
+                      <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-4">إدارة المحتوى الدراسي</h3>
+                        <p>بناء الـ API اللازم لعرض المواد والفصول والمحتوى التعليمي. يتم حماية المحتوى المدفوع بحيث لا يمكن الوصول إليه إلا من قبل المستخدمين المشتركين.</p>
+                     </div>
+                      <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-4">بوابة الدفع (Payments)</h3>
+                        <p>ربط المشروع مع بوابة دفع (مثل Stripe) لتمكين المستخدمين من الاشتراك في الخدمة وتفعيل صلاحية الوصول للمحتوى المدفوع.</p>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- Versioning Section -->
+            <section id="versioning" class="mb-12">
+                <h2 class="text-3xl font-bold border-b-4 border-blue-500 pb-2 mb-6">المرحلة السادسة: تطوير وترقية الـ API</h2>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="mb-4">عندما يتطور المشروع، من الضروري إجراء تغييرات على الـ API دون التأثير على التطبيقات الحالية. يتيح NestJS تشغيل إصدارات متعددة من الـ API في نفس الوقت.</p>
+                    <h3 class="text-2xl font-semibold mb-4">كيفية إضافة `v2` مع الحفاظ على `v1`</h3>
+                    <p class="mb-4">بما أن الإصدار الافتراضي هو `v1`، فإن أي Route لا يُحدد له إصدار سيخدم `v1` تلقائياً. لإضافة إصدار جديد، نستخدم الديكوريتور `@Version('2')`.</p>
+                    <pre class="bg-slate-900 text-white rounded-md p-4 text-sm font-mono">
+// في subjects.controller.ts
+@Controller('subjects')
+export class SubjectsController {
+  constructor(private readonly subjectsService: SubjectsService) {}
+
+  // هذا الـ Route سيخدم v1 تلقائياً
+  // GET /v1/subjects/:id/semesters
+  @Get(':id/semesters')
+  getSemestersForV1(@Param('id') id: string) {
+    // المنطق القديم: يرجع الفصول فقط
+    return this.subjectsService.findSemestersBySubject(id);
+  }
+
+  // وهذا الـ Route سيخدم v2 بشكل صريح
+  // GET /v2/subjects/:id/semesters
+  @Version('2')
+  @Get(':id/semesters')
+  getSemestersForV2(@Param('id') id: string) {
+    // المنطق الجديد: يرجع الفصول مع عدد المحتويات داخل كل فصل
+    return this.subjectsService.findSemestersWithContentCount(id);
+  }
+}
+                    </pre>
+                </div>
+            </section>
+
+            <!-- API Reference Section -->
+            <section id="api-reference" class="mb-12">
+                <h2 class="text-3xl font-bold border-b-4 border-blue-500 pb-2 mb-6">مرجع الـ API</h2>
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <!-- API Endpoint List -->
+                    <div class="w-full lg:w-1/3">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-bold mb-4">نقاط النهاية (Endpoints)</h3>
+                            <ul id="api-list" class="space-y-1">
+                                <!-- JS will populate this -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- API Endpoint Details -->
+                    <div id="api-details-container" class="w-full lg:w-2/3">
+                        <div class="bg-white p-6 rounded-lg shadow-sm min-h-[400px]">
+                            <div id="api-details-placeholder" class="text-center text-slate-500 flex items-center justify-center h-full">
+                                <p>الرجاء تحديد نقطة نهاية (Endpoint) من القائمة لعرض تفاصيلها.</p>
+                            </div>
+                            <div id="api-details-content" class="hidden space-y-4">
+                                <!-- JS will populate this -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const menuToggle = document.getElementById('menu-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+            });
+
+            // Smooth scrolling for nav links
+            document.querySelectorAll('.nav-link').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    if (window.innerWidth < 768) {
+                       navMenu.classList.add('hidden');
+                    }
+                });
+            });
+            
+            // API Reference Data
+            const apiEndpoints = {
+                register: {
+                    title: 'إنشاء حساب جديد',
+                    method: 'POST',
+                    path: '/v1/auth/register',
+                    description: 'نقطة النهاية هذه مسؤولة عن إنشاء حساب مستخدم جديد في النظام.',
+                    request: {
+                        headers: { 'Content-Type': 'application/json' },
+                        body: { email: "newuser@example.com", password: "strongpassword123" }
+                    },
+                    successResponse: {
+                        statusCode: '201 Created',
+                        body: { id: "clxqz8v9r0000u0pkgq1a3x7x", email: "newuser@example.com", isSubscribed: false }
+                    },
+                    errorResponse: null
+                },
+                login: {
+                    title: 'تسجيل الدخول',
+                    method: 'POST',
+                    path: '/v1/auth/login',
+                    description: 'تستخدم لتسجيل دخول المستخدمين الحاليين وإرجاع JWT Access Token.',
+                    request: {
+                         headers: { 'Content-Type': 'application/json' },
+                         body: { email: "newuser@example.com", password: "strongpassword123" }
+                    },
+                    successResponse: {
+                        statusCode: '200 OK',
+                        body: { accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." }
+                    },
+                    errorResponse: {
+                        statusCode: '401 Unauthorized',
+                        body: { "statusCode": 401, "message": "Unauthorized" }
+                    }
+                },
+                getContent: {
+                    title: 'جلب محتوى محمي',
+                    method: 'GET',
+                    path: '/v1/semesters/:semesterId/content-items',
+                    description: 'لجلب المحتوى التعليمي الخاص بفصل دراسي معين. تتطلب هذه العملية أن يكون المستخدم مسجلاً دخوله ومشتركاً في الخدمة.',
+                    request: {
+                         headers: { 'Authorization': 'Bearer <YOUR_ACCESS_TOKEN>' },
+                         body: null
+                    },
+                    successResponse: {
+                        statusCode: '200 OK',
+                        body: [
+                            { id: "clxqzb2a20008u0pk9g2qc2h4", title: "ملخص تواريخ الغزوات", type: "timeline", content: { "events": [{ "year": "624", "event": "غزوة بدر" }] } },
+                            { id: "clxqzbqdq000cu0pkgjshfa3k", title: "تجميع أسماء الصحابة", type: "list", content: { "companions": ["أبو بكر الصديق", "عمر بن الخطاب"] } }
+                        ]
+                    },
+                    errorResponse: {
+                        statusCode: '403 Forbidden',
+                        body: { statusCode: 403, message: "Forbidden resource. Subscription required.", error: "Forbidden" }
+                    }
+                }
+            };
+            
+            const apiList = document.getElementById('api-list');
+            const placeholder = document.getElementById('api-details-placeholder');
+            const contentContainer = document.getElementById('api-details-content');
+
+            // Populate API list
+            Object.keys(apiEndpoints).forEach(key => {
+                const endpoint = apiEndpoints[key];
+                const item = document.createElement('li');
+                item.innerHTML = `
+                    <button data-key="${key}" class="api-endpoint-item w-full text-right flex items-center gap-3 p-3 rounded-md hover:bg-slate-100 transition-colors">
+                        <span class="method-${endpoint.method.toLowerCase()} text-white font-bold text-xs py-1 px-2 rounded">${endpoint.method}</span>
+                        <span class="flex-1 font-semibold">${endpoint.title}</span>
+                    </button>
+                `;
+                apiList.appendChild(item);
+            });
+
+            // Handle endpoint selection
+            apiList.addEventListener('click', (e) => {
+                const button = e.target.closest('.api-endpoint-item');
+                if (!button) return;
+
+                // Update active class
+                document.querySelectorAll('.api-endpoint-item').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const key = button.dataset.key;
+                const endpoint = apiEndpoints[key];
+                
+                placeholder.classList.add('hidden');
+                contentContainer.classList.remove('hidden');
+
+                let requestHtml = endpoint.request.body ? `<h5 class="font-semibold mt-2">Body:</h5><pre class="bg-slate-900 text-white rounded-md p-4 text-sm font-mono">${JSON.stringify(endpoint.request.body, null, 2)}</pre>` : '<p>لا يوجد Body لهذا الطلب.</p>';
+                
+                let successHtml = `<h5 class="font-semibold mt-2">Body:</h5><pre class="bg-slate-900 text-white rounded-md p-4 text-sm font-mono">${JSON.stringify(endpoint.successResponse.body, null, 2)}</pre>`;
+                
+                let errorHtml = endpoint.errorResponse ? `
+                    <h4 class="text-lg font-bold mt-4">استجابة خطأ (${endpoint.errorResponse.statusCode})</h4>
+                    <pre class="bg-rose-100 text-rose-800 rounded-md p-4 text-sm font-mono">${JSON.stringify(endpoint.errorResponse.body, null, 2)}</pre>
+                ` : '';
+
+                contentContainer.innerHTML = `
+                    <h3 class="text-2xl font-bold">${endpoint.title}</h3>
+                    <div class="flex items-center gap-2">
+                        <span class="method-${endpoint.method.toLowerCase()} text-white font-bold text-xs py-1 px-2 rounded">${endpoint.method}</span>
+                        <code class="text-sm bg-slate-100 text-slate-700 p-2 rounded-md">${endpoint.path}</code>
+                    </div>
+                    <p class="text-slate-600">${endpoint.description}</p>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mt-4">الطلب (Request)</h4>
+                         <h5 class="font-semibold mt-2">Headers:</h5>
+                         <pre class="bg-slate-900 text-white rounded-md p-4 text-sm font-mono">${JSON.stringify(endpoint.request.headers, null, 2)}</pre>
+                        ${requestHtml}
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-bold mt-4">استجابة ناجحة (${endpoint.successResponse.statusCode})</h4>
+                        ${successHtml}
+                    </div>
+
+                    ${errorHtml}
+                `;
+            });
+
+        });
+    </script>
+</body>
+</html>

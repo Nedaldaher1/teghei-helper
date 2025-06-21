@@ -1,0 +1,94 @@
+---
+// ✨ مسار الملف الصحيح: src/pages/subjects/[partId]/[subjectId].astro
+import Layout from '../../../layouts/Layout.astro';
+import allData from '../../../data/subjectsData.json';
+
+// ✨ (مهم) دالة لتوليد المسارات لكل مادة ولكل فصل متاح فيها
+export async function getStaticPaths() {
+  const paths: { params: { subjectId: string; partId: string } }[] = [];
+  allData.subjects.forEach(subject => {
+    // التأكد من وجود كائن parts
+    if (subject.parts) {
+      // المرور على كل فصل (part-1, part-2) داخل المادة
+      Object.keys(subject.parts).forEach(partId => {
+        // إضافة المسار بالمعلمات الصحيحة
+        // يجب توفير كلا المعلمتين هنا لأن المسار يحتوي على جزئين ديناميكيين
+        paths.push({
+          params: { 
+            subjectId: subject.id,
+            partId: partId 
+          }
+        });
+      });
+    }
+  });
+  return paths;
+}
+
+// 1. الحصول على المعلمات من الرابط
+const { subjectId, partId } = Astro.params as { subjectId: string; partId: "part-1" | "part-2" };
+
+// 2. البحث عن بيانات المادة المطابقة
+const subjectData = allData.subjects.find(s => s.id === subjectId);
+
+// 3. التحقق من صلاحية المسار وإعادة التوجيه إذا لزم الأمر
+if (!subjectData || !subjectData.parts?.[partId]) {
+  return Astro.redirect('/404');
+}
+
+// 4. الوصول إلى الملخصات بناءً على بنية البيانات الجديدة
+const { title } = subjectData;
+const summaries = subjectData.parts[partId].summaries;
+const partTitle = partId === 'part-1' ? 'الفصل الأول' : 'الفصل الثاني';
+
+const themeClasses = {
+  sky: { text: 'text-sky-800', border: 'border-sky-500', hoverBg: 'hover:bg-sky-50', iconBg: 'bg-sky-100' },
+  amber: { text: 'text-amber-800', border: 'border-amber-500', hoverBg: 'hover:bg-amber-50', iconBg: 'bg-amber-100' },
+  emerald: { text: 'text-emerald-800', border: 'border-emerald-500', hoverBg: 'hover:bg-emerald-50', iconBg: 'bg-emerald-100' },
+  indigo: { text: 'text-indigo-800', border: 'border-indigo-500', hoverBg: 'hover:bg-indigo-50', iconBg: 'bg-indigo-100' },
+};
+type ThemeKey = keyof typeof themeClasses;
+const theme = themeClasses[subjectData.theme as ThemeKey] || themeClasses.sky;
+---
+
+<Layout title={`ملخصات ${title} - ${partTitle}`}>
+    <div class="text-center mt-24 mb-12">
+        <p class:list={["text-lg font-semibold", theme.text]}>{title}</p>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mt-2">
+           ملخصات {partTitle}
+        </h1>
+        <p class="text-lg text-gray-500 mt-2">اختر الملخص الذي ترغب في استعراضه</p>
+    </div>
+
+    <div class="text-center mb-12">
+        <a href={`/subjects/${partId}`} class="inline-block bg-gray-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors">
+            &larr; العودة إلى قائمة المواد
+        </a>
+    </div>
+
+    <main class="w-full max-w-7xl mx-auto px-4 pb-12">
+        {/* ✨ (معدّل) استخدام Grid لعرض البطاقات */}
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {summaries.length > 0 ? (
+                summaries.map(summary => (
+                    <a href={`/subjects/${partId}/${subjectId}/${summary.slug}`} class:list={[
+                        // ✨ (معدّل) كلاسات البطاقة لتناسب الـ Grid
+                        "summary-card flex flex-col text-right p-6 bg-white rounded-2xl shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 border-t-4",
+                        theme.border,
+                        theme.hoverBg
+                    ]}>
+                        <div class="flex-grow">
+                            <h2 class="text-xl font-bold text-gray-800">{summary.title}</h2>
+                            <p class="text-gray-500 mt-2 text-md">{summary.description}</p>
+                        </div>
+                        <p class:list={["font-semibold mt-4 text-sm", theme.text]}>{summary.book}</p>
+                    </a>
+                ))
+            ) : (
+                <div class="sm:col-span-2 lg:col-span-3 xl:col-span-4 text-center text-gray-500 bg-white p-8 rounded-lg shadow-md">
+                    <p class="font-semibold text-lg">عذراً، لا توجد ملخصات متاحة لهذه المادة في هذا الفصل حتى الآن.</p>
+                </div>
+            )}
+        </div>
+    </main>
+</Layout>

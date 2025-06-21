@@ -1,0 +1,101 @@
+---
+// ✨ مسار الملف الصحيح: src/pages/subjects/[partId].astro
+import Layout from '../../layouts/Layout.astro';
+import subjectsData from '../../data/subjectsData.json';
+
+// ✨ دالة لتوليد المسارات 'part-1' و 'part-2'
+export async function getStaticPaths() {
+  return [
+    { params: { partId: 'part-1' } },
+    { params: { partId: 'part-2' } },
+  ];
+}
+
+// 1. استقبال المعلمة من الرابط
+const { partId } = Astro.params;
+
+// 2. التحقق من صلاحية المسار
+const isPartValid = partId === 'part-1' || partId === 'part-2';
+if (!isPartValid) {
+    return Astro.redirect('/404');
+}
+
+// ✨ 3. (معدّل) فلترة المواد التي تحتوي على ملخصات في الفصل المحدد
+const subjectsForPart = subjectsData.subjects.filter(subject => 
+    subject.parts?.[partId]?.summaries?.length > 0
+);
+
+const partTitle = partId === 'part-1' ? 'الفصل الأول' : 'الفصل الثاني';
+
+// 4. استيراد نظام الثيمات الكامل لعرض بطاقات المواد
+const themeClasses = {
+  sky: {
+    bg: 'to-sky-50', text: 'text-sky-800', iconBg: 'bg-sky-100',
+    iconText: 'text-sky-600', lessonsText: 'text-sky-600',
+  },
+  amber: {
+    bg: 'to-amber-50', text: 'text-amber-800', iconBg: 'bg-amber-100',
+    iconText: 'text-amber-600', lessonsText: 'text-amber-600',
+  },
+  emerald: {
+    bg: 'to-emerald-50', text: 'text-emerald-800', iconBg: 'bg-emerald-100',
+    iconText: 'text-emerald-600', lessonsText: 'text-emerald-600',
+  },
+  indigo: {
+    bg: 'to-indigo-50', text: 'text-indigo-800', iconBg: 'bg-indigo-100',
+    iconText: 'text-indigo-600', lessonsText: 'text-indigo-600',
+  },
+};
+type ThemeKey = keyof typeof themeClasses;
+const isValidThemeKey = (key: string): key is ThemeKey => key in themeClasses;
+---
+
+<Layout title={`مواد ${partTitle}`}>
+    <main class="min-h-screen bg-gray-50 py-16 sm:py-24">
+        <div class="container mx-auto px-4">
+            <header class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
+                    المواد المتاحة - {partTitle}
+                </h1>
+                <p class="text-gray-600 mt-2">اختر المادة لعرض ملخصاتها المتاحة في هذا الفصل.</p>
+            </header>
+
+            {/* ✨ عرض بطاقات المواد بدلاً من الملخصات */}
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-5xl mx-auto">
+                {subjectsForPart.length > 0 ? (
+                    subjectsForPart.map(subject => {
+                        const themeName = isValidThemeKey(subject.theme) ? subject.theme : 'sky';
+                        const theme = themeClasses[themeName];
+                        // ✨ حساب عدد ملخصات المادة في هذا الفصل تحديدًا
+                        const summariesCount = subject.parts[partId].summaries.length;
+                        return (
+                             <a href={`/subjects/${partId}/${subject.id}?part=${partId}&class=${subject.id}`} class:list={[
+                                "subject-button flex flex-col items-center justify-center aspect-square bg-gradient-to-br from-white text-center rounded-2xl shadow-lg font-bold text-lg sm:text-xl p-4 relative overflow-hidden",
+                                theme.bg,
+                                theme.text
+                            ]}>
+                                <div class:list={["w-16 h-16 rounded-full flex items-center justify-center mb-4", theme.iconBg]}>
+                                    <img src={`${subject.icon}`} alt={subject.title} class="w-8 h-8 " />
+                                </div>
+                                {subject.title}
+                                <span class:list={["text-sm font-normal mt-2", theme.lessonsText]}>
+                                    {summariesCount} ملخص
+                                </span>
+                            </a>
+                        )
+                    })
+                ) : (
+                    <div class="col-span-full text-center p-8 bg-white rounded-lg shadow">
+                        <p class="text-gray-600">لا توجد مواد تحتوي على ملخصات في هذا الفصل حالياً.</p>
+                    </div>
+                )}
+            </div>
+
+            <div class="text-center mt-12">
+                 <a href="/subjects" class="font-semibold text-sky-700 hover:underline">
+                    &larr; العودة لاختيار الفصل
+                </a>
+            </div>
+        </div>
+    </main>
+</Layout>

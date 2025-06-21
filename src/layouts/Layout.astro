@@ -1,0 +1,62 @@
+---
+// This layout will be the base for our pages.
+// It accepts a 'title' prop for the page title.
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import 'aos/dist/aos.css'
+import '../styles/global.css'
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+<!doctype html> 
+<html lang="ar" dir="rtl"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>{title} - ملخصاتي</title> 
+	
+	<script src="https://cdn.tailwindcss.com"></script> 
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet"> 
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+
+	<style> 
+		body { 
+			font-family: 'Cairo', sans-serif; 
+			background-color: #f0f9ff; /* Tailwind CSS class: bg-sky-50 */ 
+		} 
+		.subject-button { 
+			transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+		} 
+		.subject-button:hover { 
+			transform: translateY(-8px); 
+			box-shadow: 0 10px 25px rgba(14, 165, 233, 0.25); 
+		} 
+	</style> 
+</head> 
+<body> 
+
+	<Header /> 
+
+	<main class=" "> 
+		<slot /> 
+	</main> 
+
+	<Footer /> 
+	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+	<script> 
+    import AOS from 'aos'; // Import AOS library
+		AOS.init({
+			once: true, // Animation happens only once
+			duration: 700, // Animation duration
+		}); 
+	</script> 
+</body> 
+</html>

@@ -1,0 +1,63 @@
+---
+// ✨ مسار الملف: src/pages/subjects/index.astro
+import Layout from "../../layouts/Layout.astro";
+
+// هذه الصفحة ثابتة ولا تحتاج إلى getStaticPaths
+---
+
+<Layout title="اختر الفصل الدراسي">
+    <main
+        class="min-h-[calc(100vh-10rem)] container mx-auto p-4 py-16 sm:py-24 flex flex-col items-center justify-center"
+    >
+        <div class="w-full max-w-4xl">
+            <!-- العنوان الرئيسي -->
+            <header class="text-center mb-12">
+                <h1
+                    class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-4"
+                >
+                    ملخصات المواد
+                </h1>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    اختر الفصل الذي ترغب في استعراض ملخصاته المتاحة.
+                </p>
+            </header>
+
+            <!-- بطاقات اختيار الفصل -->
+            <nav
+                class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl mx-auto"
+            >
+                <!-- بطاقة الفصل الأول -->
+                <a
+                    href="/subjects/part-1"
+                    class="subject-button flex flex-col items-center justify-center aspect-[4/3] bg-gradient-to-br from-white to-sky-50 text-sky-800 text-center rounded-2xl shadow-lg font-bold text-lg sm:text-xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                >
+                    <div
+                        class="w-16 h-16 rounded-full flex items-center justify-center mb-4 bg-sky-100 text-sky-600"
+                    >
+                        1
+                    </div>
+                    الفصل الأول
+                </a>
+
+                <!-- بطاقة الفصل الثاني -->
+                <a
+                    href="/subjects/part-2"
+                    class="subject-button flex flex-col items-center justify-center aspect-[4/3] bg-gradient-to-br from-white to-emerald-50 text-emerald-800 text-center rounded-2xl shadow-lg font-bold text-lg sm:text-xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                >
+                    <div
+                        class="w-16 h-16 rounded-full flex items-center justify-center mb-4 bg-emerald-100 text-emerald-600"
+                    >
+                        2
+                    </div>
+                    الفصل الثاني
+                </a>
+            </nav>
+
+            <div class="text-center mt-16">
+                <a href="/" class="font-semibold text-sky-700 hover:underline">
+                    &larr; العودة إلى الصفحة الرئيسية
+                </a>
+            </div>
+        </div>
+    </main>
+</Layout>

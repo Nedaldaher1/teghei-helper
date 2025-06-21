@@ -1,0 +1,263 @@
+---
+// src/pages/subjects/[partId]/[subjectId]/[summarySlug].astro
+import Layout from "../../../../layouts/Layout.astro";
+import allData from "../../../../data/subjectsData.json";
+import type { GetStaticPaths } from "astro";
+
+// استيراد المكونات
+import TimelineView from "../../../../components/TimelineView.jsx";
+import VocabularyCardsApp from "../../../../components/englishPage/wordsEnglishComponent";
+import InteractiveGrammarApp from "../../../../components/englishPage/interactiveGrammarApp";
+import InteractiveGrammarAppara from "../../../../components/arabicPage/interactiveGrammarAppAra";
+
+
+export const getStaticPaths: GetStaticPaths = () => {
+  const paths: {
+    params: { partId: string; subjectId: string; summarySlug: string };
+  }[] = [];
+  
+  allData.subjects.forEach((subject) => {
+    if (subject.parts) {
+      const parts: { [key: string]: { summaries: any[] } } = subject.parts;
+      Object.keys(parts).forEach((partId) => {
+        if (parts[partId]?.summaries) {
+          parts[partId].summaries.forEach((summary) => {
+            paths.push({
+              params: {
+                partId: partId,
+                subjectId: subject.id,
+                summarySlug: summary.slug,
+              },
+            });
+          });
+        }
+      });
+    }
+  });
+  
+  return paths;
+};
+
+const { subjectId, partId, summarySlug } = Astro.params;
+const subjectData = allData.subjects.find((s) => s.id === subjectId);
+const parts = subjectData?.parts as
+  | { [key: string]: { summaries: any[] } }
+  | undefined;
+const summaryMetadata =
+  parts && partId && parts[partId]?.summaries
+    ? parts[partId].summaries.find((s: any) => s.slug === summarySlug)
+    : undefined;
+
+// جمع جميع الملخصات المتاحة لهذا الجزء
+const allSummaries = parts && partId ? parts[partId].summaries : [];
+
+let items = [];
+if (subjectId && summarySlug) {
+  try {
+    const contentModule = await import(
+      `../../../../content/${subjectId}/${summarySlug}.json`
+    );
+    items = contentModule.default?.subjectData || contentModule.subjectData || [];
+  } catch (error) {
+    console.error(
+      `Could not load content for ${subjectId}/${summarySlug}.json.`,
+      error,
+    );
+  }
+}
+
+if (!subjectData || !summaryMetadata) {
+  return Astro.redirect("/404");
+}
+
+const { title: summaryTitle, book } = summaryMetadata;
+
+// دالة تحويل خاصة للغة الإنجليزية
+const englishDataMapper = (item: any) => ({
+  id: item.id,
+  word: item.word,
+  translation: item.translation || "",
+  example: item.example,
+  imageUrl: item.imageUrl,
+  category: item.category
+});
+
+// دالة تحويل عامة لباقي المواد
+const defaultDataMapper = (item: any) => ({
+  id: item.id || Math.random().toString(36).substr(2, 9),
+  word: item.title || item.name,
+  translation: item.translation || "",
+  example: item.description || item.definition,
+  imageUrl: item.imageUrl || item.image,
+  category: item.category || item.type || "عام"
+});
+// تحديد المكون المراد عرضه بناءً على componentType
+let Component;
+let componentProps = {};
+
+switch (summaryMetadata.componentType) {
+  case 'timeline':
+    Component = TimelineView;
+    componentProps = {
+      summaryTitle: summaryTitle,
+      book: book,
+      items: items
+    };
+    break;
+    
+  case 'grammar':
+    Component = InteractiveGrammarApp;
+    componentProps = {
+      appTitle: summaryTitle
+    };
+    break;
+    
+  case 'cards':
+  Component = VocabularyCardsApp;
+    componentProps = {
+      subjectData: items,
+      appTitle: summaryTitle,
+      dataMapper: subjectId === "english-language" ? englishDataMapper : defaultDataMapper
+    };
+    break;
+  case 'arabic-grammar':
+    Component = InteractiveGrammarAppara;
+    componentProps = {
+      appTitle: summaryTitle,
+      items: items
+    };
+    break;
+}
+
+// تخزين الملخص المختار في localStorage
+const selectedSummaryScript = `
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    localStorage.setItem('selectedSummarySlug', '${summarySlug}');
+    localStorage.setItem('selectedComponentType', '${summaryMetadata.componentType}');
+    
+    const currentSummary = '${summarySlug}';
+    document.querySelectorAll('.summary-btn').forEach(btn => {
+      if (btn.dataset.slug === currentSummary) {
+        btn.classList.add('selected-summary');
+      }
+    });
+  });
+  
+  function changeSummary(slug, componentType) {
+    localStorage.setItem('selectedSummarySlug', slug);
+    localStorage.setItem('selectedComponentType', componentType);
+    window.location.href = \`/subjects/${partId}/${subjectId}/\${slug}\`;
+  }
+</script>
+`;
+
+// إنشاء قائمة الملخصات
+const summariesList = allSummaries.map(summary => {
+  const isCurrent = summary.slug === summarySlug;
+  return `
+    <button
+      class="summary-btn w-full text-left p-3 rounded-lg transition-colors
+        ${isCurrent ? 'bg-blue-600 text-white' : 'bg-white hover:bg-blue-100 text-blue-700'}"
+      data-slug="${summary.slug}"
+      onclick="changeSummary('${summary.slug}', '${summary.componentType}')"
+    >
+      <div class="font-medium">${summary.title}</div>
+      <div class="text-sm opacity-80">${summary.book}</div>
+      <div class="text-xs mt-1 text-gray-500">نوع المحتوى: ${getComponentTypeName(summary.componentType)}</div>
+    </button>
+  `;
+}).join('');
+
+// دالة للحصول على اسم نوع المكون
+function getComponentTypeName(type: string) {
+  const typeNames: Record<string, string> = {
+    'timeline': 'الخط الزمني',
+    'grammar': 'قواعد تفاعلية',
+    'cards': 'بطاقات تعليمية'
+  };
+  return typeNames[type] || type;
+}
+
+// إنشاء HTML لقائمة الملخصات
+const summariesHTML = `
+<div class="summary-selector mb-8 bg-white p-4 rounded-xl shadow-md">
+  <h3 class="text-lg font-semibold mb-3">اختر ملخصًا آخر:</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+    ${summariesList}
+  </div>
+</div>
+`;
+---
+
+<Layout title={`${summaryTitle} - ${subjectData.title}`}>
+  <div class="container mx-auto max-w-7xl px-4 py-8">
+    <!-- عنوان الصفحة -->
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-gray-800">{subjectData.title}</h1>
+      <h2 class="text-2xl font-semibold text-blue-600 mt-2">{summaryTitle}</h2>
+      <p class="text-gray-600 mt-3 max-w-2xl mx-auto">{summaryMetadata.description}</p>
+      <div class="mt-2 inline-block bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">
+        نوع المحتوى: {getComponentTypeName(summaryMetadata.componentType)}
+      </div>
+    </div>
+
+    <!-- قائمة الملخصات -->
+
+    <!-- المحتوى التفاعلي -->
+    <div class="container mx-auto max-w-[100%] px-4 py-8">
+      <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+        {summaryMetadata.componentType === 'timeline' && (
+          <TimelineView client:visible summaryTitle={summaryTitle} book={book} items={items} />
+        )}
+        {summaryMetadata.componentType === 'grammar' && (
+          <InteractiveGrammarApp client:visible summaryTitle={summaryTitle} items={items} />
+        )}
+        {/* --- الإضافة تبدأ هنا --- */}
+        {summaryMetadata.componentType === 'arabic-grammar' && (
+          <InteractiveGrammarAppara client:visible title={summaryTitle} data={{ subjectData: items }} />
+        )}
+        {/* --- الإضافة تنتهي هنا --- */}
+        {(summaryMetadata.componentType === 'cards' || !['timeline', 'grammar', 'arabic-grammar'].includes(summaryMetadata.componentType)) && (
+          <VocabularyCardsApp
+            client:visible
+            subjectData={items}
+            appTitle={summaryTitle}
+            dataMapper={subjectId === "english-language" ? englishDataMapper : defaultDataMapper}
+          />
+        )}
+      </div>
+  
+      </div>
+
+    <!-- زر العودة -->
+    <div class="text-center my-8">
+      <a
+        href={`/subjects/${partId}/${subjectId}`}
+        class="inline-flex items-center bg-gray-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors"
+      >
+        <svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        العودة إلى قائمة الملخصات
+      </a>
+    </div>
+  </div>
+
+  <!-- تخزين الملخص المختار -->
+
+  <style>
+    .summary-btn {
+      transition: all 0.3s ease;
+      border: 1px solid #e5e7eb;
+    }
+    .summary-btn.selected-summary {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      transform: translateY(-2px);
+    }
+    .summary-btn:hover:not(.selected-summary) {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+  </style>
+</Layout>

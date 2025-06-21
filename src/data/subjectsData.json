@@ -1,0 +1,181 @@
+{
+  "subjects": [
+    {
+      "id": "history-of-jordan",
+      "title": "تاريخ الأردن",
+      "lessonsCount": 17,
+      "theme": "sky",
+      "icon": "/public/history.svg",
+      "parts": {
+        "part-1": {
+          "summaries": [
+            {
+              "slug": "timeline_data-part1",
+              "title": "ملخص الترتيب الزمني",
+              "description": "استعراض الأحداث حسب تسلسلها الزمني لفهم تطور تاريخ الأردن.",
+              "book": "ملخص زمني لتاريخ الأردن",
+              "componentType": "timeline"
+            },
+            {
+              "slug": "kingdoms-civilizations-part1",
+              "title": "ملخص  الممالك والحضارات",
+              "description": "استعراض الممالك والحضارات التي قامت في الأردن عبر العصور.",
+              "book": " ملخص الممالك والحضارات في الأردن",
+              "componentType": "timeline"
+            },
+            {
+              "slug": "Islamic-civilizations-part1",
+              "title": "ملخص الحضارات الإسلامية",
+              "description": " استعراض الحضارات الإسلامية التي أثرت في تاريخ الأردن.",
+              "book": "ملخص الحضارات الإسلامية في الأردن",
+              "componentType": "timeline"
+            },
+            {
+              "slug": "modern-civilizations-part1",
+              "title": "ملخص الحضارات الحديثة",
+              "description": "استعراض الحضارات الحديثة التي أثرت في تاريخ الأردن.",
+              "book": "ملخص الحضارات الحديثة في الأردن",
+              "componentType": "timeline"
+            }
+          ]
+        },
+        "part-2": {
+          "summaries": [
+            {
+              "slug": "chronological-summary",
+              "title": "ملخص الترتيب الزمني",
+              "description": "استعراض الأحداث حسب تسلسلها الزمني لفهم تطور تاريخ الأردن.",
+              "book": "ملخص زمني لتاريخ الأردن",
+              "componentType": "timeline"
+            },
+            {
+              "slug": "personalities-summary",
+              "title": "ملخص الشخصيات المؤثرة",
+              "description": "نبذة عن أهم الشخصيات التي أثرت في تاريخ الأردن ودورها في تشكيل الهوية الوطنية.",
+              "book": "أعلام من تاريخ الأردن",
+              "componentType": "timeline"
+
+            },
+            {
+              "slug": "institutions-summary",
+              "title": "ملخص المؤسسات والمشاريع",
+              "description": "قائمة بالمؤسسات الكبرى والمشاريع الوطنية التي ساهمت في تطور الأردن.",
+              "book": "سجل المؤسسات الأردنية",
+              "componentType": "timeline"
+            },
+            {
+              "slug": "wars-and-battles-summary",
+              "title": "ملخص الحروب والمعارك",
+              "description": "تفاصيل المعارك التي شارك فيها الجيش العربي ودورها في تاريخ المنطقة.",
+              "book": "سجل المعارك الأردنية",
+              "componentType": "timeline"
+            },
+            {
+              "slug": "laws-and-constitutions-summary",
+              "title": "ملخص القوانين والدساتير",
+              "description": "يستعرض التطورات التشريعية والدستورية الرئيسية في تاريخ الدولة الأردنية.",
+              "book": "التشريع في تاريخ الأردن",
+              "componentType": "timeline"
+            },
+            {
+              "slug": "treaties-summary",
+              "title": "ملخص المعاهدات والاتفاقيات",
+              "description": "أهم المعاهدات والاتفاقيات الدولية التي وقعها الأردن وأثرها السياسي.",
+              "book": "الاتفاقيات في تاريخ الأردن",
+              "componentType": "timeline"
+
+            },
+            {
+              "slug": "foreign-relations-summary",
+              "title": "ملخص العلاقات الخارجية",
+              "description": "مواقف الأردن وعلاقاته الدبلوماسية مع الدول الأخرى عبر التاريخ.",
+              "book": "الأردن على الساحة الدولية",
+              "componentType": "timeline"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "arabic-language",
+      "title": "اللغة العربية",
+      "lessonsCount": 2,
+      "theme": "amber",
+      "icon": "/public/arabic.svg",
+      "parts": {
+        "part-1": {
+          "summaries": [
+            {
+              "slug": "grammar-summary-ara-part1",
+              "title": "ملخص  القواعد",
+              "description": " مراجعة شاملة لأبواب النحو مع أمثلة تطبيقية.",
+              "book": "كتاب القواعد ",
+              "componentType": "arabic-grammar"
+            }
+          ]
+        },
+        "part-2": {
+          "summaries": [
+            {
+              "slug": "grammar-summary-ara-part2",
+              "title": "ملخص  القواعد",
+              "description": " مراجعة شاملة لأبواب النحو مع أمثلة تطبيقية.",
+              "book": "كتاب القواعد ",
+              "componentType": "arabic-grammar"
+            },
+            {
+              "slug": "nahw-summary",
+              "title": "ملخص النحو",
+              "description": "مراجعة شاملة لأبواب النحو مع أمثلة تطبيقية.",
+              "book": "كتاب القواعد والبلاغة",
+              "componentType": "timeline"
+
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "english-language",
+      "title": "اللغة الإنجليزية",
+      "lessonsCount": 2,
+      "theme": "green",
+      "icon": "/public/english.svg",
+      "parts": {
+        "part-1": {
+          "summaries": [
+            {
+              "slug": "vocabulary-summary-part1",
+              "title": "ملخص المفردات",
+              "description": "أهم المفردات والتعابير المستخدمة في اللغة الإنجليزية.",
+              "book": "Essential English Vocabulary",
+              "componentType": "cards"
+
+              
+            }
+          ]
+        },
+        "part-2": {
+          "summaries": [
+            {
+              "slug": "grammar-summary-part2",
+              "title": "ملخص القواعد",
+              "description": "مراجعة شاملة لأهم قواعد اللغة الإنجليزية.",
+              "book": "English Grammar Essentials",
+              "componentType": "grammar"
+            },
+            {
+              "slug": "vocabulary-summary-part2",
+              "title": "ملخص المفردات",
+              "description": "أهم المفردات والتعابير المستخدمة في اللغة الإنجليزية.",
+              "book": "Essential English Vocabulary",
+              "componentType": "cards"
+
+              
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

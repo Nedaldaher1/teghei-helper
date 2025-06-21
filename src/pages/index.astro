@@ -1,0 +1,39 @@
+
+---
+import Layout from '../layouts/Layout.astro';
+import HomePage from '../components/homePage';
+
+---
+<Layout title="مرحباً بكم - منصة ملخصاتي">
+    <HomePage client:visible />
+</Layout>
+
+<style>
+    .text-shadow-lg {
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    /* تحسينات التصميم العامة */
+    body {
+        scroll-behavior: smooth;
+    }
+    section {
+        scroll-margin-top: 80px;
+    }
+    .bg-gradient-to-br {
+        background-size: 200% 200%;
+        animation: gradientBG 15s ease infinite;
+    }
+    @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+</style>

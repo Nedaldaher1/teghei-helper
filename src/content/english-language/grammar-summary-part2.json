@@ -1,0 +1,1296 @@
+{
+  "subjectData": [
+    {
+      "id": "articles",
+      "title": "1. أدوات التعريف (Articles)",
+      "videoId": "H8UBbksRNas",
+      "videoIds": [
+        "H8UBbksRNas",
+        "26qCP6YLfiA",
+        "8rrbrucTJHA",
+        "7Afa04I9nws",
+        "4H6dPx_cNDw",
+        "AYX3OBzyftg"
+      ],
+      "usage": "تُستخدم أدوات التعريف لتحديد ما إذا كان الاسم محددًا أم غير محدد، مع مراعاة عدّة حالات مثل الأسماء القابلة للعد، غير القابلة للعد، الأسماء الجمع، الأسماء الخاصة، والتعبيرات الثابتة.",
+      "formation": {
+        "النكرة": "a/an + n(count, sg)",
+        "المعرفة": "the + n",
+        "الصفرية": "Ø + n(pl/uncount)",
+        "حالات خاصة": {
+          "الأسماء العلم": {
+            "بدون أداة": "معظم أسماء المدن والبلدان المفردة: Paris, Jordan بدون 'the'.",
+            "مع أداة": "الدول بصيغة الجمع أو التي تحتوي على كلمات مثل United States, Netherlands, United Kingdom تحتاج 'the'.",
+            "الأنهار والجبال": "the Nile, the Himalayas",
+            "الصحف والمنظمات": "the New York Times, the United Nations"
+          },
+          "تعبيرات ثابتة": [
+            "in hospital في الإنجليزية البريطانية مقابل in the hospital في بعض السياقات الأمريكية",
+            "go to school عند الحديث عن الدوام العام مقابل go to the school إذا كانت مدرسة معينة",
+            "by car عمومًا مقابل by the car عند الإشارة إلى سيارة محددة"
+          ],
+          "الصفات كأسماء": "the rich للأغنياء، the poor للفقراء، the unemployed للعاطلين عن العمل",
+          "صيغة التفضيل": "the + الصيغة التفضيلية مثل the biggest, the most important",
+          "الأعداد الترتيبية": "the first, the second, the third",
+          "الكيانات الفريدة": "the sun, the moon, the earth",
+          "أسماء المواد": "عادة بدون أداة مثل gold is valuable. إلا في حالات خاصة: the gold used in this artwork"
+        }
+      },
+      "examples": [
+        {
+          "en": "I’m reading a really good article.",
+          "ar": "أنا أقرأ مقالًا جيدًا حقًا."
+        },
+        {
+          "en": "The article talks about space.",
+          "ar": "المقال يتحدث عن الفضاء."
+        },
+        {
+          "en": "Life was very hard.",
+          "ar": "كانت الحياة صعبة للغاية."
+        },
+        {
+          "en": "Cats are independent animals.",
+          "ar": "القطط حيوانات مستقلة (حديث عام بدون أداة تعريف)."
+        },
+        {
+          "en": "The cats in the garden are sleeping.",
+          "ar": "القطط الموجودة في الحديقة نائمة."
+        },
+        {
+          "en": "She is an engineer.",
+          "ar": "هي مهندسة."
+        },
+        {
+          "en": "I saw the movie you recommended.",
+          "ar": "شاهدت الفيلم الذي أوصيتني به."
+        },
+        {
+          "en": "We visited the United Kingdom last summer.",
+          "ar": "زرنا المملكة المتحدة الصيف الماضي."
+        },
+        {
+          "en": "Mount Everest is the highest mountain in the world.",
+          "ar": "جبل إيفرست هو أعلى جبل في العالم."
+        },
+        {
+          "en": "Freedom is important.",
+          "ar": "الحرية مهمة (اسم غير قابل للعد بدون أداة تعريف)."
+        },
+        {
+          "en": "She goes to school every day.",
+          "ar": "تذهب إلى المدرسة كل يوم (حديث عام)."
+        },
+        {
+          "en": "He is in the hospital now.",
+          "ar": "هو في المستشفى الآن (حالة محددة)."
+        }
+      ],
+      "keywords": [
+        "Indefinite article",
+        "Definite article",
+        "Zero article",
+        "Proper nouns",
+        "Fixed expressions",
+        "Adjectives as nouns",
+        "Superlative",
+        "Ordinal numbers",
+        "Unique entities",
+        "Mass nouns"
+      ],
+      "tips": [
+        {
+          "title": "نصيحة 1: اختيار النكرة 'a' أو 'an'",
+          "content": "الاختيار يعتمد على الصوت الافتتاحي للكلمة التالية. استخدم 'an' قبل الكلمات التي تبدأ بصوت حرف علة مثل 'hour' لأن الحرف الأول غير منطوق. استخدم 'a' قبل الكلمات التي تبدأ بصوت ساكن."
+        },
+        {
+          "title": "نصيحة 2: متى نستخدم 'the'؟",
+          "content": "استخدم 'the' عندما يكون الاسم محددًا أو سبق ذكره أو معروفًا في السياق أو فريدًا."
+        },
+        {
+          "title": "نصيحة 3: أداة الصفرية",
+          "content": "عند الحديث بشكل عام عن أسماء جمع أو غير قابلة للعد دون تحديد، لا تستخدم أداة تعريف."
+        },
+        {
+          "title": "نصيحة 4: الأسماء العلم",
+          "content": "معظم أسماء المدن والبلدان المفردة لا تحتاج 'the'. الدول بصيغة الجمع أو التي تحتوي كلمات معينة تحتاج 'the'."
+        },
+        {
+          "title": "نصيحة 5: التعبيرات الثابتة",
+          "content": "بعض التعابير مثل 'go to school' و'in hospital' لا تحتاج أداة تعريف لأنها عامة."
+        },
+        {
+          "title": "نصيحة 6: الصفات كأسماء",
+          "content": "استخدم 'the' مع الصفات لتحويلها إلى جمع ضمني: 'the rich'، 'the unemployed'."
+        },
+        {
+          "title": "نصيحة 7: أسماء المواد",
+          "content": "عادة بدون أداة تعريف، إلا في حالة الإشارة إلى مادة محددة أو جزء منها."
+        }
+      ],
+      "sentenceBuilders": [
+        {
+          "words": [
+            "She",
+            "is",
+            "an",
+            "excellent",
+            "teacher",
+            "."
+          ],
+          "correctSentence": "She is an excellent teacher ."
+        },
+        {
+          "words": [
+            "He",
+            "bought",
+            "book",
+            "yesterday",
+            "."
+          ],
+          "correctSentence": "He bought a book yesterday ."
+        },
+        {
+          "words": [
+            "I",
+            "love",
+            "music",
+            "."
+          ],
+          "correctSentence": "I love music ."
+        },
+        {
+          "words": [
+            "We",
+            "visited",
+            "Eiffel",
+            "Tower",
+            "."
+          ],
+          "correctSentence": "We visited the Eiffel Tower ."
+        },
+        {
+          "words": [
+            "She",
+            "studies",
+            "at",
+            "university",
+            "."
+          ],
+          "correctSentence": "She studies at university ."
+        },
+        {
+          "words": [
+            "The",
+            "children",
+            "play",
+            "in",
+            "park",
+            "."
+          ],
+          "correctSentence": "The children play in the park ."
+        },
+        {
+          "words": [
+            "Life",
+            "is",
+            "full",
+            "of",
+            "surprises",
+            "."
+          ],
+          "correctSentence": "Life is full of surprises ."
+        },
+        {
+          "words": [
+            "He",
+            "read",
+            "article",
+            "about",
+            "space",
+            "."
+          ],
+          "correctSentence": "He read an article about space ."
+        },
+        {
+          "words": [
+            "Do",
+            "you",
+            "like",
+            "coffee",
+            "?"
+          ],
+          "correctSentence": "Do you like coffee ?"
+        },
+        {
+          "words": [
+            "I",
+            "met",
+            "president",
+            "of",
+            "company",
+            "."
+          ],
+          "correctSentence": "I met the president of the company ."
+        }
+      ],
+      "errorSpotter": [
+        {
+          "sentence": [
+            "I",
+            "need",
+            "a",
+            "advice",
+            "."
+          ],
+          "incorrectWord": "a advice",
+          "correctWord": "advice"
+        },
+        {
+          "sentence": [
+            "She",
+            "is",
+            "a",
+            "best",
+            "teacher",
+            "."
+          ],
+          "incorrectWord": "a best",
+          "correctWord": "the best"
+        },
+        {
+          "sentence": [
+            "The",
+            "love",
+            "is",
+            "a",
+            "beautiful",
+            "thing",
+            "."
+          ],
+          "incorrectWord": "The love",
+          "correctWord": "Love"
+        },
+        {
+          "sentence": [
+            "I",
+            "go",
+            "to",
+            "the",
+            "school",
+            "by",
+            "bus",
+            "."
+          ],
+          "incorrectWord": "the school",
+          "correctWord": "school"
+        },
+        {
+          "sentence": [
+            "He",
+            "watched",
+            "movie",
+            "yesterday",
+            "."
+          ],
+          "incorrectWord": "movie",
+          "correctWord": "the movie"
+        }
+      ],
+      "additionalExercises": {
+        "fillInTheBlanks": [
+          {
+            "sentence": "I saw ____ movie you recommended last week.",
+            "options": [
+              "a",
+              "the",
+              ""
+            ],
+            "answer": "the"
+          },
+          {
+            "sentence": "____ water in this lake is cold.",
+            "options": [
+              "The",
+              ""
+            ],
+            "answer": ""
+          },
+          {
+            "sentence": "She dreams of becoming ____ astronaut.",
+            "options": [
+              "an",
+              "a",
+              ""
+            ],
+            "answer": "an"
+          },
+          {
+            "sentence": "____ Mount Everest is famous worldwide.",
+            "options": [
+              "Mount Everest",
+              "The Mount Everest",
+              "The Mount Everest"
+            ],
+            "answer": "Mount Everest"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "أي جملة صحيحة عند الحديث عن عادات عامة؟",
+            "options": [
+              "The cats are independent.",
+              "Cats are independent.",
+              "A cats are independent."
+            ],
+            "answer": "Cats are independent."
+          },
+          {
+            "question": "أي جملة صحيحة لكيان فريد؟",
+            "options": [
+              "Sun rises in east.",
+              "The sun rises in the east.",
+              "A sun rises in east."
+            ],
+            "answer": "The sun rises in the east."
+          }
+        ],
+        "translation": [
+          {
+            "ar": "ذهبت إلى المدرسة البارحة.",
+            "en": "I went to school yesterday."
+          },
+          {
+            "ar": "الطفل يلعب في الحديقة.",
+            "en": "The child is playing in the garden."
+          }
+        ],
+        "writingPrompts": [
+          "اكتب فقرة تصف فيها روتينك اليومي، واذكر متى تستخدم النكرة ومتى تستخدم المعرفة.",
+          "اكتب عن مدينة تحبها ووضح سبب اختيارك لأداة التعريف."
+        ]
+      },
+      "generalAdvice": "تمرّن على قراءة نصوص متنوعة ولاحظ استخدام أدوات التعريف. ركز على السياق والمعنى عند الاختيار."
+    },
+    {
+      "id": "modalVerbs",
+      "title": "2. الأفعال المساعدة (Modal & Related Verbs)",
+      "videoId": "PsfKxQ_3-8w",
+      "videoIds": [
+        "PsfKxQ_3-8w",
+        "8Dr6xb2rh5w",
+        "UR7NxjMSHhI",
+        "agCPNqGdehs"
+      ],
+      "usage": "تُستخدم الأفعال المساعدة للتعبير عن الوجوب، الضرورة، القدرة، الإذن، الاحتمال، والنفي. تشمل must, have to, can, could, may, might, should, ought to, need, be able to وأشكالها.",
+      "formation": {
+        "الأساسي": {
+          "مثبت": "sbj + modal + v1",
+          "النفي": "sbj + modal + not + v1",
+          "حالة السؤال": "modal + sbj + v1"
+        },
+        "التام": {
+          "مثبت": "sbj + modal + have + v3",
+          "النفي": "sbj + modal + not + have + v3",
+          "حالة السؤال": "modal + sbj + have + v3"
+        },
+        "المبني للمجهول": {
+          "الهيكل": "sbj + modal + be + v3",
+          "مثال": "The work must be finished by tomorrow."
+        },
+        "الأشكال المرتبطة": [
+          "sbj + have to + v1",
+          "sbj + be supposed to + v1",
+          "sbj + be allowed to + v1",
+          "sbj + be able to + v1",
+          "sbj + used to + v1"
+        ]
+      },
+      "examples": [
+        {
+          "en": "You must wear a seatbelt in the car.",
+          "ar": "يجب أن ترتدي حزام الأمان في السيارة."
+        },
+        {
+          "en": "He doesn’t have to work today.",
+          "ar": "ليس عليه أن يعمل اليوم."
+        },
+        {
+          "en": "She can speak three languages fluently.",
+          "ar": "يمكنها التحدث بثلاث لغات بطلاقة."
+        },
+        {
+          "en": "He could fix the computer yesterday.",
+          "ar": "تمكن من إصلاح الكمبيوتر أمس."
+        },
+        {
+          "en": "You should see a doctor.",
+          "ar": "ينبغي لك أن تذهب إلى الطبيب."
+        },
+        {
+          "en": "He might come later.",
+          "ar": "ربما يأتي لاحقًا."
+        },
+        {
+          "en": "You mustn't smoke here.",
+          "ar": "لا يُسمح بالتدخين هنا."
+        },
+        {
+          "en": "She has to finish the report by Friday.",
+          "ar": "يجب عليها إنهاء التقرير بحلول الجمعة."
+        },
+        {
+          "en": "They were able to solve the problem.",
+          "ar": "تمكنوا من حل المشكلة."
+        },
+        {
+          "en": "You needn't worry.",
+          "ar": "ليس عليك القلق."
+        }
+      ],
+      "keywords": [
+        "must",
+        "have to",
+        "should",
+        "can",
+        "could",
+        "may",
+        "might",
+        "mustn't",
+        "don't have to",
+        "be able to",
+        "need to",
+        "needn't",
+        "ought to",
+        "used to",
+        "be supposed to",
+        "be allowed to"
+      ],
+      "tips": [
+        {
+          "title": "نصيحة 1: الفرق بين Must و Have to",
+          "content": "استخدم must للتعبير عن التزام داخلي أو رأي المتحدث. استخدم have to للتعبير عن التزام خارجي مفروض."
+        },
+        {
+          "title": "نصيحة 2: الإذن والنفي",
+          "content": "استخدم can للسؤال عن الإذن أو منحه. استخدم may في الأسلوب الرسمي."
+        },
+        {
+          "title": "نصيحة 3: الاحتمال",
+          "content": "استخدم might أو may للحديث عن الاحتمالات."
+        },
+        {
+          "title": "نصيحة 4: القدرة في الماضي",
+          "content": "استخدم could للقدرة العامة في الماضي. استخدم was/were able to للقدرة في موقف محدد."
+        },
+        {
+          "title": "نصيحة 5: الصيغ التامة",
+          "content": "للتعبير عن الافتراض أو الندم في الماضي استخدم should have أو might have أو could have."
+        },
+        {
+          "title": "نصيحة 6: الأشكال المرتبطة",
+          "content": "لاحظ الفروقات بين be able to و can/could وكذلك have to و must."
+        }
+      ],
+      "sentenceBuilders": [
+        {
+          "words": [
+            "You",
+            "must",
+            "finish",
+            "the",
+            "assignment",
+            "by",
+            "Monday",
+            "."
+          ],
+          "correctSentence": "You must finish the assignment by Monday ."
+        },
+        {
+          "words": [
+            "She",
+            "can",
+            "play",
+            "the",
+            "piano",
+            "."
+          ],
+          "correctSentence": "She can play the piano ."
+        },
+        {
+          "words": [
+            "He",
+            "was",
+            "able",
+            "to",
+            "solve",
+            "the",
+            "puzzle",
+            "."
+          ],
+          "correctSentence": "He was able to solve the puzzle ."
+        },
+        {
+          "words": [
+            "They",
+            "should",
+            "visit",
+            "the",
+            "museum",
+            "."
+          ],
+          "correctSentence": "They should visit the museum ."
+        },
+        {
+          "words": [
+            "You",
+            "don't",
+            "have",
+            "to",
+            "come",
+            "if",
+            "you",
+            "don't",
+            "want",
+            "to",
+            "."
+          ],
+          "correctSentence": "You don't have to come if you don't want to ."
+        },
+        {
+          "words": [
+            "She",
+            "might",
+            "arrive",
+            "late",
+            "."
+          ],
+          "correctSentence": "She might arrive late ."
+        },
+        {
+          "words": [
+            "He",
+            "mustn't",
+            "forget",
+            "his",
+            "keys",
+            "."
+          ],
+          "correctSentence": "He mustn't forget his keys ."
+        },
+        {
+          "words": [
+            "They",
+            "could",
+            "have",
+            "left",
+            "earlier",
+            "."
+          ],
+          "correctSentence": "They could have left earlier ."
+        },
+        {
+          "words": [
+            "You",
+            "shouldn't",
+            "have",
+            "said",
+            "that",
+            "."
+          ],
+          "correctSentence": "You shouldn't have said that ."
+        },
+        {
+          "words": [
+            "We",
+            "have",
+            "to",
+            "study",
+            "for",
+            "the",
+            "exam",
+            "."
+          ],
+          "correctSentence": "We have to study for the exam ."
+        }
+      ],
+      "errorSpotter": [
+        {
+          "sentence": [
+            "You",
+            "must",
+            "to",
+            "finish",
+            "the",
+            "homework",
+            "."
+          ],
+          "incorrectWord": "must to",
+          "correctWord": "must"
+        },
+        {
+          "sentence": [
+            "I",
+            "can",
+            "to",
+            "swim",
+            "well",
+            "."
+          ],
+          "incorrectWord": "can to",
+          "correctWord": "can"
+        },
+        {
+          "sentence": [
+            "She",
+            "mighted",
+            "come",
+            "tomorrow",
+            "."
+          ],
+          "incorrectWord": "mighted",
+          "correctWord": "might"
+        },
+        {
+          "sentence": [
+            "He",
+            "should to",
+            "go",
+            "now",
+            "."
+          ],
+          "incorrectWord": "should to",
+          "correctWord": "should"
+        },
+        {
+          "sentence": [
+            "They",
+            "don't",
+            "must",
+            "be",
+            "late",
+            "."
+          ],
+          "incorrectWord": "don't must",
+          "correctWord": "mustn't"
+        }
+      ]
+    },
+    {
+      "id": "conditionalVerbs",
+      "title": "3. الأفعال الشرطية (Conditional Verbs)",
+      "videoId": "NYnhobM00gM",
+      "videoIds": [
+        "NYnhobM00gM",
+        "Mv0aDhlF77c",
+        "7_-J6-zNYF0",
+        "cbffd-AUZYE",
+        "3yBK_an3aDA"
+      ],
+      "usage": "تُستخدم للتعبير عن مواقف محتملة أو افتراضية في الحاضر أو الماضي أو المستقبل، وتتضمن أنواعًا متعددة مثل الشرط الصفري والأول والثاني والثالث والمختلط، بالإضافة إلى العكس والحالات الخاصة مثل unless وprovided وas long as وwish.",
+      "formation": {
+        "Zero conditional": "if + v1 , v1",
+        "First conditional": "if + v1 , will + v1",
+        "Second conditional": "if + v2 , would + v1",
+        "Third conditional": "if + had + v3 , would have + v3",
+        "Mixed conditional": "if + had + v3 , would + v1"
+      },
+      "examples": [
+        {
+          "en": "If you heat water, it boils.",
+          "ar": "إذا سخنت الماء فإنه يغلي."
+        },
+        {
+          "en": "If it rains tomorrow, we will cancel the picnic.",
+          "ar": "إذا أمطرت غدًا سنلغي النزهة."
+        },
+        {
+          "en": "If I had a million dollars, I would travel the world.",
+          "ar": "لو كان لدي مليون دولار لسافرت حول العالم."
+        },
+        {
+          "en": "If she had studied harder, she would have passed the exam.",
+          "ar": "لو أنها درست بجد أكبر لكانت نجحت في الامتحان."
+        },
+        {
+          "en": "If I had won the lottery, I would be rich now.",
+          "ar": "لو كنت ربحت اليانصيب لكنت غنيًا الآن."
+        },
+        {
+          "en": "Had I known about the event, I would have attended.",
+          "ar": "لو كنت قد علمت بالحدث لكنت حضرت."
+        },
+        {
+          "en": "Should you need assistance, call me.",
+          "ar": "إذا احتجت إلى مساعدة اتصل بي."
+        },
+        {
+          "en": "Unless you hurry, you will miss the train.",
+          "ar": "ما لم تُسرع ستفوت القطار."
+        },
+        {
+          "en": "Provided that he arrives on time, we can start.",
+          "ar": "بشرط أن يصل في الوقت يمكننا البدء."
+        },
+        {
+          "en": "As long as you study, you will improve.",
+          "ar": "طالما أنك تدرس ستتحسن."
+        }
+      ],
+      "keywords": [
+        "Zero conditional",
+        "Second conditional",
+        "Third conditional"
+      ],
+      "tips": [
+        {
+          "title": "نصيحة 1: الشرط الصفري",
+          "content": "للحقيقة أو العادات. If + المضارع البسيط ثم المضارع البسيط."
+        },
+        {
+          "title": "نصيحة 2: الشرط الأول",
+          "content": "للاحتمالات المستقبلية الواقعية. If + المضارع البسيط ثم will + الفعل الأساسي."
+        },
+        {
+          "title": "نصيحة 3: الشرط الثاني",
+          "content": "للوضعيات الافتراضية الحالية أو المستقبلية غير المحتملة. If + الماضي البسيط ثم would + الفعل الأساسي."
+        },
+        {
+          "title": "نصيحة 4: الشرط الثالث",
+          "content": "للتعبير عن ندم أو افتراض في الماضي لم يحدث. If + past perfect ثم would have + past participle."
+        },
+        {
+          "title": "نصيحة 5: الشرط المختلط",
+          "content": "للتعبير عن نتيجة حالية لشرط في الماضي. If + past perfect ثم would + الفعل الأساسي."
+        },
+        {
+          "title": "نصيحة 6: العكس",
+          "content": "لتجنب if: Should + Subject, Were + Subject + to, Had + Subject + past participle."
+        },
+        {
+          "title": "نصيحة 7: unless وprovided وas long as",
+          "content": "استخدم unless بدل if not. استخدم provided that وas long as لتحديد الشروط بوضوح."
+        },
+        {
+          "title": "نصيحة 8: wish",
+          "content": "للتعبير عن رغبات أو ندم بأسلوب خاص."
+        }
+      ],
+      "sentenceBuilders": [
+        {
+          "words": [
+            "If",
+            "you",
+            "exercise",
+            ",",
+            "you",
+            "feel",
+            "better",
+            "."
+          ],
+          "correctSentence": "If you exercise , you feel better ."
+        },
+        {
+          "words": [
+            "If",
+            "she",
+            "calls",
+            "me",
+            ",",
+            "I",
+            "will",
+            "tell",
+            "her",
+            "."
+          ],
+          "correctSentence": "If she calls me , I will tell her ."
+        },
+        {
+          "words": [
+            "If",
+            "I",
+            "won",
+            "the",
+            "prize",
+            ",",
+            "I",
+            "would",
+            "donate",
+            "it",
+            "."
+          ],
+          "correctSentence": "If I won the prize , I would donate it ."
+        },
+        {
+          "words": [
+            "If",
+            "they",
+            "had",
+            "left",
+            "earlier",
+            ",",
+            "they",
+            "wouldn't",
+            "be",
+            "stuck",
+            "in",
+            "traffic",
+            "."
+          ],
+          "correctSentence": "If they had left earlier , they wouldn't be stuck in traffic ."
+        },
+        {
+          "words": [
+            "Had",
+            "I",
+            "known",
+            "about",
+            "the",
+            "meeting",
+            ",",
+            "I",
+            "would have attended",
+            "."
+          ],
+          "correctSentence": "Had I known about the meeting , I would have attended ."
+        },
+        {
+          "words": [
+            "Unless",
+            "you",
+            "apologize",
+            ",",
+            "she",
+            "won't",
+            "forgive",
+            "you",
+            "."
+          ],
+          "correctSentence": "Unless you apologize , she won't forgive you ."
+        },
+        {
+          "words": [
+            "Provided",
+            "that",
+            "it",
+            "doesn't",
+            "rain",
+            ",",
+            "we",
+            "will",
+            "go",
+            "."
+          ],
+          "correctSentence": "Provided that it doesn't rain , we will go ."
+        },
+        {
+          "words": [
+            "Were",
+            "I",
+            "you",
+            ",",
+            "I",
+            "wouldn't",
+            "do",
+            "that",
+            "."
+          ],
+          "correctSentence": "Were I you , I wouldn't do that ."
+        },
+        {
+          "words": [
+            "I",
+            "wish",
+            "I",
+            "had",
+            "more",
+            "time",
+            "."
+          ],
+          "correctSentence": "I wish I had more time ."
+        },
+        {
+          "words": [
+            "As",
+            "long",
+            "as",
+            "you",
+            "work",
+            "hard",
+            ",",
+            "you",
+            "will",
+            "succeed",
+            "."
+          ],
+          "correctSentence": "As long as you work hard , you will succeed ."
+        }
+      ],
+      "errorSpotter": [
+        {
+          "sentence": [
+            "If",
+            "he",
+            "will",
+            "come",
+            ",",
+            "we",
+            "will",
+            "start",
+            "."
+          ],
+          "incorrectWord": "will come",
+          "correctWord": "comes"
+        },
+        {
+          "sentence": [
+            "If",
+            "I",
+            "was",
+            "rich",
+            ",",
+            "I",
+            "would",
+            "buy",
+            "a",
+            "car",
+            "."
+          ],
+          "incorrectWord": "was",
+          "correctWord": "were"
+        },
+        {
+          "sentence": [
+            "If",
+            "she",
+            "had studied",
+            ",",
+            "she",
+            " would pass",
+            "the",
+            "exam",
+            "."
+          ],
+          "incorrectWord": "would pass",
+          "correctWord": "would have passed"
+        },
+        {
+          "sentence": [
+            "Had she came",
+            "to the party",
+            "."
+          ],
+          "incorrectWord": "came",
+          "correctWord": "come"
+        },
+        {
+          "sentence": [
+            "Unless you will hurry",
+            ", you will miss the bus",
+            "."
+          ],
+          "incorrectWord": "Unless you will hurry",
+          "correctWord": "Unless you hurry"
+        }
+      ]
+    },
+    {
+      "id": "passiveVoice",
+      "title": "4. المبني للمجهول (The Passive Voice)",
+      "videoId": "RUGjhiZmbOc",
+      "videoIds": [
+        "RUGjhiZmbOc",
+        "ffJr9CG3k2k",
+        "ipHPIt4yLOo",
+        "J6VVUHez66Q",
+        "4rre2p261Ec"
+      ],
+      "usage": "يُستخدم المبني للمجهول لتحويل التركيز من الفاعل إلى المفعول أو للتعميم عندما لا يكون الفاعل مهمًا أو معروفًا. شائع في الكتابة الرسمية والتقارير والتعليمات.",
+      "formation": {
+        "أساسي": {
+          "مثبت": "sbj + be + v3",
+          "النفي": "sbj + be + not + v3",
+          "حالة السؤال": "be + sbj + v3"
+        },
+        "الأزمنة": {
+          "Present simple": "am/is/are + v3",
+          "Past simple": "was/were + v3",
+          "Present continuous": "am/is/are + being + v3",
+          "Past continuous": "was/were + being + v3",
+          "Present perfect": "has/have + been + v3",
+          "Past perfect": "had + been + v3",
+          "Future simple": "will + be + v3",
+          "Modal passive": "modal + be + v3",
+          "Perfect passive": "modal + have + been + v3",
+          "Get passive": "sbj + get(s)/got + v3",
+          "Infinitive passive": "to + be + v3",
+          "Participial adjective": "v3 (as adjective)"
+        },
+        "الفاعل (Agent)": {
+          "مع الفاعل": "by + agent (اختياري)",
+          "بدون الفاعل": "بدون agent إذا غير مهم"
+        }
+      },
+      "examples": [
+        {
+          "en": "The car is washed every week.",
+          "ar": "تُغسل السيارة كل أسبوع."
+        },
+        {
+          "en": "The letter was written yesterday.",
+          "ar": "كُتبت الرسالة بالأمس."
+        },
+        {
+          "en": "The problem will be solved soon.",
+          "ar": "ستُحل المشكلة قريبًا."
+        },
+        {
+          "en": "A new bridge is being built.",
+          "ar": "يتم بناء جسر جديد الآن."
+        },
+        {
+          "en": "The task has been completed.",
+          "ar": "تم إنجاز المهمة."
+        },
+        {
+          "en": "Mistakes were made.",
+          "ar": "تم ارتكاب أخطاء."
+        },
+        {
+          "en": "The work must be finished by Friday.",
+          "ar": "يجب إنجاز العمل بحلول الجمعة."
+        },
+        {
+          "en": "It is said that laughter is the best medicine.",
+          "ar": "يقال إن الضحك هو أفضل دواء."
+        },
+        {
+          "en": "My wallet was stolen.",
+          "ar": "سُرقت محفظتي."
+        },
+        {
+          "en": "She got promoted last month.",
+          "ar": "تمت ترقيتها الشهر الماضي (Get Passive)."
+        }
+      ],
+      "keywords": [
+        "Basic passive",
+        "Present simple",
+        "Past simple",
+        "Present continuous",
+        "Present perfect",
+        "Future simple",
+        "Modal passive",
+        "Perfect passive",
+        "Get passive",
+        "Infinitive passive",
+        "Participial adjective",
+        "Agent"
+      ],
+      "tips": [
+        {
+          "title": "نصيحة 1: متى نذكر الفاعل؟",
+          "content": "استخدم by + Agent فقط إذا كان الفاعل مهمًا أو جديدًا."
+        },
+        {
+          "title": "نصيحة 2: الرسمي وغير الرسمي",
+          "content": "المبني للمجهول شائع في الكتابة الرسمية. في الحديث اليومي نفضل المبني للمعلوم إلا عند عدم معرفة الفاعل."
+        },
+        {
+          "title": "نصيحة 3: Get Passive",
+          "content": "في المحادثة غير الرسمية يمكن استخدام get للتعبير عن أحداث غير مقصودة."
+        },
+        {
+          "title": "نصيحة 4: الحذر",
+          "content": "بعض الأفعال لا تأخذ مبني مجهول بسهولة لأنها لا يكون لها مفعول مباشر واضح."
+        }
+      ],
+      "sentenceBuilders": [
+        {
+          "words": [
+            "The",
+            "book",
+            "was",
+            "read",
+            "by",
+            "her",
+            "."
+          ],
+          "correctSentence": "The book was read by her ."
+        },
+        {
+          "words": [
+            "Mistakes",
+            "were",
+            "made",
+            "."
+          ],
+          "correctSentence": "Mistakes were made ."
+        },
+        {
+          "words": [
+            "The",
+            "dishes",
+            "have",
+            "been",
+            "washed",
+            "."
+          ],
+          "correctSentence": "The dishes have been washed ."
+        },
+        {
+          "words": [
+            "The",
+            "report",
+            "will",
+            "be",
+            "finished",
+            "tomorrow",
+            "."
+          ],
+          "correctSentence": "The report will be finished tomorrow ."
+        },
+        {
+          "words": [
+            "This",
+            "door",
+            "must",
+            "be",
+            "locked",
+            "at",
+            "night",
+            "."
+          ],
+          "correctSentence": "This door must be locked at night ."
+        },
+        {
+          "words": [
+            "A",
+            "new",
+            "song",
+            "is",
+            "being",
+            "recorded",
+            "."
+          ],
+          "correctSentence": "A new song is being recorded ."
+        },
+        {
+          "words": [
+            "The",
+            "cake",
+            "was",
+            "made",
+            "by",
+            "my",
+            "mother",
+            "."
+          ],
+          "correctSentence": "The cake was made by my mother ."
+        },
+        {
+          "words": [
+            "Is",
+            "English",
+            "spoken",
+            "here",
+            "?"
+          ],
+          "correctSentence": "Is English spoken here ?"
+        },
+        {
+          "words": [
+            "The",
+            "building",
+            "will",
+            "be",
+            "demolished",
+            "next",
+            "month",
+            "."
+          ],
+          "correctSentence": "The building will be demolished next month ."
+        },
+        {
+          "words": [
+            "He",
+            "got",
+            "promoted",
+            "last",
+            "year",
+            "."
+          ],
+          "correctSentence": "He got promoted last year ."
+        }
+      ],
+      "errorSpotter": [
+        {
+          "sentence": [
+            "The",
+            "email",
+            "was",
+            "send",
+            "this",
+            "morning",
+            "."
+          ],
+          "incorrectWord": "send",
+          "correctWord": "sent"
+        },
+        {
+          "sentence": [
+            "The",
+            "book",
+            "was",
+            "wrote",
+            "by",
+            "him",
+            "."
+          ],
+          "incorrectWord": "wrote",
+          "correctWord": "written"
+        },
+        {
+          "sentence": [
+            "The",
+            "news",
+            "are",
+            "announced",
+            "on",
+            "TV",
+            "."
+          ],
+          "incorrectWord": "are",
+          "correctWord": "is"
+        },
+        {
+          "sentence": [
+            "The",
+            "bridge",
+            "was",
+            "build",
+            "last",
+            "year",
+            "."
+          ],
+          "incorrectWord": "build",
+          "correctWord": "built"
+        },
+        {
+          "sentence": [
+            "English",
+            "is",
+            "speak",
+            "all",
+            "over",
+            "the",
+            "world",
+            "."
+          ],
+          "incorrectWord": "speak",
+          "correctWord": "spoken"
+        }
+      ]
+    }
+  ]
+}

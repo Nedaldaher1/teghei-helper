@@ -1,0 +1,10 @@
+---
+// src/pages/login.astro
+import RegisterPage from '../components/SignupPage.tsx';
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout title="Login" >
+  <RegisterPage client:load />
+</Layout>

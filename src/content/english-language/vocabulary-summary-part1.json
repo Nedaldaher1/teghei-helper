@@ -1,0 +1,2068 @@
+{
+  "subjectData": [
+    {
+      "id": 1,
+      "word": "Work",
+      "translation": "العمل (النص الأصلي)",
+      "example": "The term 'work' in this context refers to the original text before its adaptation to a specific culture.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📖",
+      "category": "اسم"
+    },
+    {
+      "id": 2,
+      "word": "Omnivore",
+      "translation": "آكل اللحوم والنباتات",
+      "example": "Humans are considered 'omnivores' because they consume both plants and animals.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌿🥩",
+      "category": "اسم"
+    },
+    {
+      "id": 3,
+      "word": "Rival",
+      "translation": "منافس",
+      "example": "In sports competitions, 'rivals' compete to achieve victory.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🏆",
+      "category": "اسم"
+    },
+    {
+      "id": 4,
+      "word": "Compound noun",
+      "translation": "اسم مركب",
+      "example": "The word 'climate change' is an example of a 'compound noun' where 'climate' specifies the type of 'change'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📚",
+      "category": "مصطلح نحوي"
+    },
+    {
+      "id": 5,
+      "word": "Collocation",
+      "translation": "متلازمة لفظية",
+      "example": "'Disprove a theory' is an example of a 'collocation'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤝",
+      "category": "مصطلح نحوي"
+    },
+    {
+      "id": 6,
+      "word": "Enigma",
+      "translation": "لغز",
+      "example": "What happened remains 'an enigma' to this day.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=❓",
+      "category": "اسم"
+    },
+    {
+      "id": 7,
+      "word": "Fraud",
+      "translation": "احتيال",
+      "example": "She spent four years in prison for 'fraud'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⚖️",
+      "category": "اسم"
+    },
+    {
+      "id": 8,
+      "word": "Refute",
+      "translation": "يدحض",
+      "example": "He 'refuted' the allegations made against him.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🗣️",
+      "category": "فعل"
+    },
+    {
+      "id": 9,
+      "word": "Carry a message",
+      "translation": "نقل رسالة",
+      "example": "The article aims to 'carry a message' of importance.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=✉️",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 10,
+      "word": "Convey a message",
+      "translation": "إيصال رسالة",
+      "example": "It's important to 'convey a message' clearly to avoid misunderstanding.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📬",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 11,
+      "word": "Deliver a message",
+      "translation": "توصيل رسالة",
+      "example": "You can 'deliver a message' in person or via email.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🚚",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 12,
+      "word": "Greeting",
+      "translation": "تحية",
+      "example": "Programmer Neil Papworth sent the first text message 'greeting' in 1992.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👋",
+      "category": "اسم"
+    },
+    {
+      "id": 13,
+      "word": "Lose contact/touch with somebody",
+      "translation": "فقدان التواصل مع شخص ما",
+      "example": "I don't want to 'lose contact with my friends'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💔",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 14,
+      "word": "Make contact with somebody",
+      "translation": "التواصل مع شخص ما",
+      "example": "I would like to 'make contact with that company' to start a partnership.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤝",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 15,
+      "word": "Pass on a message",
+      "translation": "تمرير رسالة",
+      "example": "It is important to 'pass on a message' accurately to prevent errors.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=➡️",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 16,
+      "word": "Spread the message",
+      "translation": "نشر الرسالة",
+      "example": "Our goal is to 'spread the message about' the importance of blood donation.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌐",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 17,
+      "word": "Stay in touch",
+      "translation": "البقاء على اتصال",
+      "example": "It's good to 'stay in touch' with old friends.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📱",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 18,
+      "word": "Figure out",
+      "translation": "يفهم أو يحل",
+      "example": "It took me an hour to 'figure out' how to stop the spam messages.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💡",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 19,
+      "word": "Get across",
+      "translation": "يوصل فكرة",
+      "example": "It can be difficult to 'get across' complex ideas in a short time.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🗣️",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 20,
+      "word": "Make out",
+      "translation": "يميز بصعوبة",
+      "example": "It was foggy, but he could still 'make out' the distant star.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧐",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 21,
+      "word": "Pick up",
+      "translation": "يلتقط أو يفهم",
+      "example": "Children often 'pick up' languages quickly.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧠",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 22,
+      "word": "Point out",
+      "translation": "يشير إلى",
+      "example": "He 'pointed out' that I had made some basic spelling mistakes.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=�",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 23,
+      "word": "Spell out",
+      "translation": "يشرح بوضوح",
+      "example": "You need to 'spell out' the steps in detail so everyone can understand.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔤",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 24,
+      "word": "Break the ice",
+      "translation": "يكسر الجليد",
+      "example": "Do you find it difficult to 'break the ice' with people you don't know?",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧊",
+      "category": "مصطلح"
+    },
+    {
+      "id": 25,
+      "word": "Strike up",
+      "translation": "يبدأ محادثة",
+      "example": "He 'struck up a conversation' with the new neighbor at the party.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💬",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 26,
+      "word": "Create a rapport",
+      "translation": "بناء علاقة ودية",
+      "example": "She quickly 'created a rapport' with her new colleagues.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤝",
+      "category": "مصطلح"
+    },
+    {
+      "id": 27,
+      "word": "Take to",
+      "translation": "يعجب بـ فوراً",
+      "example": "I 'took to him' immediately because he was so friendly.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😊",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 28,
+      "word": "Have a good laugh",
+      "translation": "يضحك كثيراً",
+      "example": "We always 'have a good laugh' with my grandparents when we visit them.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😂",
+      "category": "مصطلح"
+    },
+    {
+      "id": 29,
+      "word": "Be the peacemaker",
+      "translation": "يكون صانع سلام",
+      "example": "He had to 'be the peacemaker' between his feuding friends.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🕊️",
+      "category": "مصطلح"
+    },
+    {
+      "id": 30,
+      "word": "Blow things out of proportion",
+      "translation": "يبالغ في رد الفعل",
+      "example": "You shouldn't 'blow things out of proportion' over a small problem.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💣",
+      "category": "مصطلح"
+    },
+    {
+      "id": 31,
+      "word": "Empathise with somebody",
+      "translation": "يتعاطف مع شخص ما",
+      "example": "It's important to 'empathise with' others' feelings to understand them better.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=❤️‍🩹",
+      "category": "فعل"
+    },
+    {
+      "id": 32,
+      "word": "Fall out with somebody",
+      "translation": "يتشاجر مع شخص ما",
+      "example": "I 'fell out with' my friend after a small argument over a game.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😠",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 33,
+      "word": "Give somebody a compliment",
+      "translation": "يقدم مجاملة",
+      "example": "She 'gave Abeer a compliment' on her beautiful shoes.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👍",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 34,
+      "word": "Have a go at somebody",
+      "translation": "ينتقد شخصًا",
+      "example": "It's not appropriate to 'have a go at' someone in front of others.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🗣️",
+      "category": "مصطلح"
+    },
+    {
+      "id": 35,
+      "word": "Let somebody down",
+      "translation": "يخذل شخصًا",
+      "example": "You are 'constantly letting me down' when you don't keep your promises.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😔",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 36,
+      "word": "Lose your temper",
+      "translation": "يفقد أعصابه",
+      "example": "It is important not to 'lose your temper' in public.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😡",
+      "category": "مصطلح"
+    },
+    {
+      "id": 37,
+      "word": "Make a fuss of somebody",
+      "translation": "يولي اهتمامًا كبيرًا",
+      "example": "They 'made a fuss of' the newcomer to make him feel comfortable.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎉",
+      "category": "مصطلح"
+    },
+    {
+      "id": 38,
+      "word": "Make fun of somebody/something",
+      "translation": "يسخر من",
+      "example": "They 'made fun of my sister' about her new haircut.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😜",
+      "category": "مصطلح"
+    },
+    {
+      "id": 39,
+      "word": "Make up with somebody",
+      "translation": "يتصالح مع",
+      "example": "It's good to 'make up with somebody' after a fight and move on.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤝",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 40,
+      "word": "Mess about",
+      "translation": "يتصرف بسخافة",
+      "example": "Stop 'messing about' and start doing your homework.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤪",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 41,
+      "word": "Put up with somebody/something",
+      "translation": "يتحمل",
+      "example": "I can't 'put up with' his rude behavior anymore.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😤",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 42,
+      "word": "Show off",
+      "translation": "يتباهى",
+      "example": "Salwa loves 'showing off her singing talents' whenever her friends visit.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😎",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 43,
+      "word": "Talk behind somebody’s back",
+      "translation": "يتحدث عن شخص في غيابه",
+      "example": "I'm completely annoyed by people who 'talk behind my back'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤫",
+      "category": "مصطلح"
+    },
+    {
+      "id": 44,
+      "word": "Tell somebody off about something",
+      "translation": "يوبخ شخصًا",
+      "example": "Parents often 'tell somebody off' their children when they make mistakes.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😠",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 45,
+      "word": "Wind somebody up",
+      "translation": "يغيظ شخصًا",
+      "example": "She is 'always winding me up' with her constant jokes.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😂",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 46,
+      "word": "Do somebody a favour",
+      "translation": "يفعل خدمة لشخص",
+      "example": "Can you 'do me a favour' and help me with this project?",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🙏",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 47,
+      "word": "Go my way",
+      "translation": "تسير الأمور كما أريد",
+      "example": "When things don't 'go my way', I try to stay positive.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👍",
+      "category": "مصطلح"
+    },
+    {
+      "id": 48,
+      "word": "Handle a situation",
+      "translation": "يتعامل مع موقف",
+      "example": "You need to learn how to 'handle a situation' calmly and wisely.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⚖️",
+      "category": "مصطلح"
+    },
+    {
+      "id": 49,
+      "word": "Have a hard time",
+      "translation": "يواجه صعوبة",
+      "example": "I 'had a hard time' understanding what the physics teacher was talking about.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😩",
+      "category": "مصطلح"
+    },
+    {
+      "id": 50,
+      "word": "Make ends meet",
+      "translation": "يدبر أمور المعيشة",
+      "example": "It's hard to 'make ends meet' on a low salary in the city.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💸",
+      "category": "مصطلح"
+    },
+    {
+      "id": 51,
+      "word": "Stick at something",
+      "translation": "يستمر في شيء",
+      "example": "You have to 'stick at something' to succeed in your studies.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=끈기",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 52,
+      "word": "Turn out",
+      "translation": "يتبين",
+      "example": "Our trip 'turned out' to be very enjoyable despite the bad start.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=✨",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 53,
+      "word": "Annoyed",
+      "translation": "منزعج",
+      "example": "I feel 'annoyed' when people forget their appointments.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😒",
+      "category": "صفة"
+    },
+    {
+      "id": 54,
+      "word": "Confused",
+      "translation": "مشوش",
+      "example": "I was 'confused' by the directions he gave.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😕",
+      "category": "صفة"
+    },
+    {
+      "id": 55,
+      "word": "Frightened",
+      "translation": "خائف",
+      "example": "He was 'frightened' that someone would discover his secret.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😨",
+      "category": "صفة"
+    },
+    {
+      "id": 56,
+      "word": "Furious",
+      "translation": "غاضب جدًا",
+      "example": "Randa was 'furious' when she found out her daughter had cheated on the exam again.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😡",
+      "category": "صفة"
+    },
+    {
+      "id": 57,
+      "word": "Nervous",
+      "translation": "متوتر",
+      "example": "She felt 'nervous' while waiting for her job interview.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😬",
+      "category": "صفة"
+    },
+    {
+      "id": 58,
+      "word": "Sad",
+      "translation": "حزين",
+      "example": "She was 'sad' to hear the bad news about her friend.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😢",
+      "category": "صفة"
+    },
+    {
+      "id": 59,
+      "word": "Surprised",
+      "translation": "متفاجئ",
+      "example": "I was 'surprised' when I received an unexpected gift.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😮",
+      "category": "صفة"
+    },
+    {
+      "id": 60,
+      "word": "Thrilled",
+      "translation": "سعيد جداً",
+      "example": "I'm 'thrilled' about my exam results; I didn't expect to do so well.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤩",
+      "category": "صفة"
+    },
+    {
+      "id": 61,
+      "word": "Terrified",
+      "translation": "مرعوب",
+      "example": "He is 'terrified' that someone will find out his secret.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😱",
+      "category": "صفة"
+    },
+    {
+      "id": 62,
+      "word": "Astonished",
+      "translation": "مذهول",
+      "example": "I am 'astonished' by what happened in the show.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤯",
+      "category": "صفة"
+    },
+    {
+      "id": 63,
+      "word": "Exasperated",
+      "translation": "غاضب بسبب الإحباط",
+      "example": "He is 'exasperated' with the unchanging situation.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😤",
+      "category": "صفة"
+    },
+    {
+      "id": 64,
+      "word": "Livid",
+      "translation": "شديد الغضب",
+      "example": "Randa's mother was 'livid' when she discovered her daughter's cheating.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤬",
+      "category": "صفة"
+    },
+    {
+      "id": 65,
+      "word": "Tense",
+      "translation": "متوتر",
+      "example": "She felt 'tense' waiting for the job interview.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😟",
+      "category": "صفة"
+    },
+    {
+      "id": 66,
+      "word": "Ecstatic",
+      "translation": "مبتهج",
+      "example": "I am 'ecstatic' about my exam results; I couldn't believe it.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🥳",
+      "category": "صفة"
+    },
+    {
+      "id": 67,
+      "word": "Bewildered",
+      "translation": "حائر",
+      "example": "He feels completely 'bewildered'; he has no idea how he lost his phone.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😵",
+      "category": "صفة"
+    },
+    {
+      "id": 68,
+      "word": "Devastated",
+      "translation": "محطم",
+      "example": "She was 'devastated' when she lost her phone.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💔",
+      "category": "صفة"
+    },
+    {
+      "id": 69,
+      "word": "Down in the dumps",
+      "translation": "حزين أو محبط",
+      "example": "I'm feeling a bit 'down in the dumps' today.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😞",
+      "category": "مصطلح"
+    },
+    {
+      "id": 70,
+      "word": "Walking on air",
+      "translation": "سعيد جدًا",
+      "example": "I'm 'walking on air' after the good news.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😇",
+      "category": "مصطلح"
+    },
+    {
+      "id": 71,
+      "word": "Can’t stop smiling",
+      "translation": "لا يستطيع التوقف عن الابتسام",
+      "example": "I 'can’t stop smiling' since I heard the news.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😁",
+      "category": "مصطلح"
+    },
+    {
+      "id": 72,
+      "word": "I don’t blame you",
+      "translation": "لا ألومك",
+      "example": "A: I'm completely annoyed by people who talk behind my back. B: 'I don’t blame you'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👍",
+      "category": "عبارة"
+    },
+    {
+      "id": 73,
+      "word": "I know, right?",
+      "translation": "أعلم، أليس كذلك؟",
+      "example": "A: You're lucky! B: 'I know, right?'",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😉",
+      "category": "عبارة"
+    },
+    {
+      "id": 74,
+      "word": "I’m really pleased for you",
+      "translation": "أنا سعيد جداً من أجلك",
+      "example": "A: I got the job! B: 'I’m really pleased for you'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😊",
+      "category": "عبارة"
+    },
+    {
+      "id": 75,
+      "word": "I’m so sorry to hear that",
+      "translation": "أنا آسف جداً لسماع ذلك",
+      "example": "A: My aunt is not well. B: 'I’m so sorry to hear that'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😔",
+      "category": "عبارة"
+    },
+    {
+      "id": 76,
+      "word": "What a pain!",
+      "translation": "يا له من أمر مزعج!",
+      "example": "A: I missed the train. B: 'What a pain!'",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😫",
+      "category": "عبارة"
+    },
+    {
+      "id": 77,
+      "word": "What’s the worst that could happen?",
+      "translation": "ما هو أسوأ ما يمكن أن يحدث؟",
+      "example": "A: I'm nervous about the presentation. B: 'What’s the worst that could happen?'",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤷",
+      "category": "عبارة"
+    },
+    {
+      "id": 78,
+      "word": "Petrified",
+      "translation": "خائف جداً",
+      "example": "I'm 'petrified' of spiders.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🕷️",
+      "category": "صفة"
+    },
+    {
+      "id": 79,
+      "word": "Attention span",
+      "translation": "مدى الانتباه",
+      "example": "Online articles need to be concise because everyone has a 'short attention span' these days.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⏳",
+      "category": "اسم"
+    },
+    {
+      "id": 80,
+      "word": "Clickbait headlines",
+      "translation": "عناوين جذابة للنقر",
+      "example": "Newspapers use 'clickbait headlines' to grab readers' attention.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📰",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 81,
+      "word": "Expose corruption",
+      "translation": "كشف الفساد",
+      "example": "I would like to 'expose corruption' in the government.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⚖️",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 82,
+      "word": "Generate revenue",
+      "translation": "توليد الإيرادات",
+      "example": "If posts 'go viral', they can 'generate' hundreds of thousands of page views and thus 'advertising revenue' for the news site.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💰",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 83,
+      "word": "Go viral",
+      "translation": "ينتشر بسرعة",
+      "example": "If posts 'go viral', it can mean hundreds of thousands of page views.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📈",
+      "category": "فعل + صفة"
+    },
+    {
+      "id": 84,
+      "word": "Hit the headlines",
+      "translation": "يتصدر العناوين",
+      "example": "I'd like to cover traditional news stories that 'hit the headlines'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🗞️",
+      "category": "مصطلح"
+    },
+    {
+      "id": 85,
+      "word": "In the public interest",
+      "translation": "في المصلحة العامة",
+      "example": "I'd like to cover traditional news stories that are 'in the public interest'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌍",
+      "category": "مصطلح"
+    },
+    {
+      "id": 86,
+      "word": "Present both sides of the story",
+      "translation": "عرض جانبي القصة",
+      "example": "I would like to have the time to 'present both sides of the story'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⚖️",
+      "category": "مصطلح"
+    },
+    {
+      "id": 87,
+      "word": "Raise awareness",
+      "translation": "زيادة الوعي",
+      "example": "Organizations can 'raise awareness' about environmental issues.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📢",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 88,
+      "word": "Shed light on something",
+      "translation": "يسلط الضوء على شيء",
+      "example": "The articles I write rarely 'shed light on' major issues.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💡",
+      "category": "مصطلح"
+    },
+    {
+      "id": 89,
+      "word": "Verify sources",
+      "translation": "التحقق من المصادر",
+      "example": "I would like to have the time to 'verify my sources'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=✔️",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 90,
+      "word": "Accusation",
+      "translation": "اتهام",
+      "example": "The men denied the 'accusation' that they had committed the crime.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⚖️",
+      "category": "اسم"
+    },
+    {
+      "id": 91,
+      "word": "Allegation",
+      "translation": "ادعاء",
+      "example": "The 'allegations' against him are quite shocking, but he denies them all.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🗣️",
+      "category": "اسم"
+    },
+    {
+      "id": 92,
+      "word": "Obstruct",
+      "translation": "يعيق",
+      "example": "You should not 'obstruct' the hallway.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🚧",
+      "category": "فعل"
+    },
+    {
+      "id": 93,
+      "word": "Pavement",
+      "translation": "رصيف",
+      "example": "Pedestrians should walk on the 'pavement'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🚶",
+      "category": "اسم"
+    },
+    {
+      "id": 94,
+      "word": "Release a statement",
+      "translation": "إصدار بيان",
+      "example": "The company decided to 'release a statement' after the incident.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📄",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 95,
+      "word": "Replacement",
+      "translation": "بديل",
+      "example": "It will be hard to find a 'suitable replacement' for Layla when she leaves her position.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔄",
+      "category": "اسم"
+    },
+    {
+      "id": 96,
+      "word": "Report something to the police",
+      "translation": "الإبلاغ عن شيء للشرطة",
+      "example": "You should 'report something to the police' if you see a crime.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🚓",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 97,
+      "word": "Request",
+      "translation": "طلب",
+      "example": "I have made a 'request' for additional information.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📝",
+      "category": "اسم"
+    },
+    {
+      "id": 98,
+      "word": "Seize an opportunity",
+      "translation": "انتهاز فرصة",
+      "example": "He 'seized an opportunity' for a promotion when it arose.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💡",
+      "category": "مصطلح"
+    },
+    {
+      "id": 99,
+      "word": "Suspension",
+      "translation": "إيقاف مؤقت",
+      "example": "The student faced 'suspension' from school for misconduct.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🚫",
+      "category": "اسم"
+    },
+    {
+      "id": 100,
+      "word": "Tension",
+      "translation": "توتر",
+      "example": "There was 'tension' in the room before the results were announced.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😬",
+      "category": "اسم"
+    },
+    {
+      "id": 101,
+      "word": "Balanced",
+      "translation": "متوازن",
+      "example": "I'd like to write 'balanced' articles that present both sides of the story.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⚖️",
+      "category": "صفة"
+    },
+    {
+      "id": 102,
+      "word": "Exclusive",
+      "translation": "حصري",
+      "example": "This is an 'exclusive' news story for our newspaper only.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌟",
+      "category": "صفة"
+    },
+    {
+      "id": 103,
+      "word": "Hard-hitting",
+      "translation": "لاذع",
+      "example": "The article was 'hard-hitting' and exposed shocking facts.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💥",
+      "category": "صفة"
+    },
+    {
+      "id": 104,
+      "word": "Heartbreaking",
+      "translation": "مفجع",
+      "example": "The story of the missing child was 'heartbreaking'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💔",
+      "category": "صفة"
+    },
+    {
+      "id": 105,
+      "word": "Heartwarming",
+      "translation": "مُدفئ للقلب",
+      "example": "I have never heard 'such a heartwarming story' before.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=❤️",
+      "category": "صفة"
+    },
+    {
+      "id": 106,
+      "word": "Newsworthy",
+      "translation": "جدير بالنشر",
+      "example": "Some sites think that silly stories are 'newsworthy'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📰",
+      "category": "صفة"
+    },
+    {
+      "id": 107,
+      "word": "Off the record",
+      "translation": "غير رسمي",
+      "example": "The information he provided was 'off the record'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤫",
+      "category": "مصطلح"
+    },
+    {
+      "id": 108,
+      "word": "Quirky",
+      "translation": "غريب وممتع",
+      "example": "The movie was 'quirky' and enjoyable due to its unique characters.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤪",
+      "category": "صفة"
+    },
+    {
+      "id": 109,
+      "word": "Sensational",
+      "translation": "مثير",
+      "example": "They write 'sensational' stories to attract readers rather than facts.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😲",
+      "category": "صفة"
+    },
+    {
+      "id": 110,
+      "word": "Topical",
+      "translation": "مواكب للأحداث",
+      "example": "The article was 'topical', discussing important current events.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📅",
+      "category": "صفة"
+    },
+    {
+      "id": 111,
+      "word": "Capture an image",
+      "translation": "التقاط صورة",
+      "example": "The new camera can 'capture an image' clearly even in low light.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📸",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 112,
+      "word": "Cropped",
+      "translation": "مقصوص",
+      "example": "The shot was not 'cropped' well.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=✂️",
+      "category": "صفة"
+    },
+    {
+      "id": 113,
+      "word": "Evoke",
+      "translation": "يستحضر",
+      "example": "This picture 'evokes' a sense of nostalgia.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💭",
+      "category": "فعل"
+    },
+    {
+      "id": 114,
+      "word": "Landscape photo",
+      "translation": "صورة طبيعية",
+      "example": "I love taking 'landscape photos' of the countryside in the fall.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🏞️",
+      "category": "اسم"
+    },
+    {
+      "id": 115,
+      "word": "Poignant",
+      "translation": "مؤثر",
+      "example": "This is a 'poignant' photo that reminds us of the importance of family.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😢",
+      "category": "صفة"
+    },
+    {
+      "id": 116,
+      "word": "Pose",
+      "translation": "يتخذ وضعية",
+      "example": "Tourists love 'posing for photos' in front of famous landmarks.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧍",
+      "category": "فعل"
+    },
+    {
+      "id": 117,
+      "word": "Subject matter",
+      "translation": "الموضوع الرئيسي",
+      "example": "The 'subject matter' of this photo is interesting; it depicts daily life.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎨",
+      "category": "اسم"
+    },
+    {
+      "id": 118,
+      "word": "Bellow",
+      "translation": "يزأر",
+      "example": "The man got angry and 'bellowed' loudly at the employee.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🗣️",
+      "category": "فعل"
+    },
+    {
+      "id": 119,
+      "word": "Glance",
+      "translation": "يلقي نظرة",
+      "example": "He 'glanced' at his watch to check the time.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👀",
+      "category": "فعل"
+    },
+    {
+      "id": 120,
+      "word": "Mutter",
+      "translation": "يهمهم",
+      "example": "He 'muttered' something incomprehensible under his breath.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤫",
+      "category": "فعل"
+    },
+    {
+      "id": 121,
+      "word": "Peer",
+      "translation": "يحدق",
+      "example": "She was 'peering' at the clock to see the time.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧐",
+      "category": "فعل"
+    },
+    {
+      "id": 122,
+      "word": "Race",
+      "translation": "يهرع",
+      "example": "He 'raced' to the scene of the accident.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🏃",
+      "category": "فعل"
+    },
+    {
+      "id": 123,
+      "word": "Spot something",
+      "translation": "يكتشف شيئًا",
+      "example": "I managed to 'spot something' strange in the picture.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎯",
+      "category": "فعل + اسم"
+    },
+    {
+      "id": 124,
+      "word": "Wander",
+      "translation": "يتجول",
+      "example": "The children were left to 'wander' freely in the park.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🚶‍♂️",
+      "category": "فعل"
+    },
+    {
+      "id": 125,
+      "word": "Yell",
+      "translation": "يصرخ",
+      "example": "He 'yelled' loudly in my ear.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📢",
+      "category": "فعل"
+    },
+    {
+      "id": 126,
+      "word": "Colour-blind",
+      "translation": "عمى الألوان",
+      "example": "I am 'colour-blind' so I couldn't distinguish between the two colors.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎨",
+      "category": "صفة"
+    },
+    {
+      "id": 127,
+      "word": "Eyesight",
+      "translation": "البصر",
+      "example": "He has 'good eyesight' and sees things clearly from a distance.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👁️",
+      "category": "اسم"
+    },
+    {
+      "id": 128,
+      "word": "Hearing loss",
+      "translation": "فقدان السمع",
+      "example": "'Hearing loss' is another way of saying 'deafness'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧏",
+      "category": "اسم"
+    },
+    {
+      "id": 129,
+      "word": "Keen sense of smell",
+      "translation": "حاسة شم قوية",
+      "example": "I have a 'keen sense of smell' and can smell things from a distance.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👃",
+      "category": "مصطلح"
+    },
+    {
+      "id": 130,
+      "word": "Perceive",
+      "translation": "يدرك",
+      "example": "We 'perceive' the world through our five senses.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧠",
+      "category": "فعل"
+    },
+    {
+      "id": 131,
+      "word": "Sensitive palate",
+      "translation": "ذوق حساس",
+      "example": "Laith used to have a 'sensitive palate', but now he eats anything.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👅",
+      "category": "مصطلح"
+    },
+    {
+      "id": 132,
+      "word": "Aroma",
+      "translation": "رائحة طيبة",
+      "example": "The 'aroma' of brewing coffee was refreshing.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=☕",
+      "category": "اسم"
+    },
+    {
+      "id": 133,
+      "word": "Subtle",
+      "translation": "خفيف",
+      "example": "The perfume had a 'subtle' scent.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌸",
+      "category": "صفة"
+    },
+    {
+      "id": 134,
+      "word": "Overpowering",
+      "translation": "قوي جدًا",
+      "example": "The smell of garbage was 'overpowering' in the restaurant.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤢",
+      "category": "صفة"
+    },
+    {
+      "id": 135,
+      "word": "Stench",
+      "translation": "رائحة كريهة",
+      "example": "There was a terrible 'stench' when someone opened the trash can.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🗑️",
+      "category": "اسم"
+    },
+    {
+      "id": 136,
+      "word": "Stink",
+      "translation": "تفوح منه رائحة كريهة",
+      "example": "Something 'stinks' when it rots.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💩",
+      "category": "فعل"
+    },
+    {
+      "id": 137,
+      "word": "High-pitched",
+      "translation": "عالي النبرة",
+      "example": "The baby made a 'high-pitched' sound while playing.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔊",
+      "category": "صفة"
+    },
+    {
+      "id": 138,
+      "word": "Coarse",
+      "translation": "خشن",
+      "example": "The fur was a bit 'coarse'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text= sandpaper",
+      "category": "صفة"
+    },
+    {
+      "id": 139,
+      "word": "Fluffy",
+      "translation": "رقيق",
+      "example": "The animal was 'fluffy' when it was young.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=☁️",
+      "category": "صفة"
+    },
+    {
+      "id": 140,
+      "word": "Prickly",
+      "translation": "شائك",
+      "example": "The cactus was 'prickly'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌵",
+      "category": "صفة"
+    },
+    {
+      "id": 141,
+      "word": "Silky",
+      "translation": "حريري",
+      "example": "Her hair was soft and 'silky'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=✨",
+      "category": "صفة"
+    },
+    {
+      "id": 142,
+      "word": "Smooth",
+      "translation": "ناعم",
+      "example": "The cake had a 'smooth' surface.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🍰",
+      "category": "صفة"
+    },
+    {
+      "id": 143,
+      "word": "Spiky",
+      "translation": "مدبب",
+      "example": "The plant had 'spiky' leaves.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=뾰족",
+      "category": "صفة"
+    },
+    {
+      "id": 144,
+      "word": "Squishy",
+      "translation": "طري",
+      "example": "The toy was soft and 'squishy'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧸",
+      "category": "صفة"
+    },
+    {
+      "id": 145,
+      "word": "Sticky",
+      "translation": "لزج",
+      "example": "The honey was 'sticky'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🍯",
+      "category": "صفة"
+    },
+    {
+      "id": 146,
+      "word": "Bland",
+      "translation": "باهت (الطعم)",
+      "example": "The curry I ordered was 'bland' and not very tasty.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😑",
+      "category": "صفة"
+    },
+    {
+      "id": 147,
+      "word": "Crunchy",
+      "translation": "مقرمش",
+      "example": "The vegetables were thinly sliced and 'crunchy'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🥕",
+      "category": "صفة"
+    },
+    {
+      "id": 148,
+      "word": "Mild",
+      "translation": "خفيف (الطعم)",
+      "example": "I ordered a 'mild' curry.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😊",
+      "category": "صفة"
+    },
+    {
+      "id": 149,
+      "word": "Runny",
+      "translation": "سائل",
+      "example": "The ketchup in the UK is more 'runny' than the ketchup in the USA.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💧",
+      "category": "صفة"
+    },
+    {
+      "id": 150,
+      "word": "Savoury",
+      "translation": "مالح أو لاذع",
+      "example": "I prefer 'savoury' foods over sweets.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🥨",
+      "category": "صفة"
+    },
+    {
+      "id": 151,
+      "word": "Spicy",
+      "translation": "حار",
+      "example": "Mexican food is often 'spicy'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌶️",
+      "category": "صفة"
+    },
+    {
+      "id": 152,
+      "word": "Tasty",
+      "translation": "لذيذ",
+      "example": "The curry looked 'tasty enough', but the reality was disappointing.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😋",
+      "category": "صفة"
+    },
+    {
+      "id": 153,
+      "word": "Thick",
+      "translation": "سميك",
+      "example": "This sauce is very 'thick'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🥣",
+      "category": "صفة"
+    },
+    {
+      "id": 154,
+      "word": "Watery",
+      "translation": "مائي",
+      "example": "The sauce was very 'watery' and didn't have a good consistency.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💧",
+      "category": "صفة"
+    },
+    {
+      "id": 155,
+      "word": "Gross",
+      "translation": "مقرف",
+      "example": "This food looks 'gross'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤢",
+      "category": "صفة"
+    },
+    {
+      "id": 156,
+      "word": "Impressive",
+      "translation": "مثير للإعجاب",
+      "example": "The museum was very 'impressive'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🏛️",
+      "category": "صفة"
+    },
+    {
+      "id": 157,
+      "word": "Mind-blowing",
+      "translation": "مذهل",
+      "example": "The interactive displays were 'utterly mind-blowing'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤯",
+      "category": "صفة"
+    },
+    {
+      "id": 158,
+      "word": "Bigoted",
+      "translation": "متعصب",
+      "example": "He's very 'bigoted' and refuses to accept anyone who thinks differently from him.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😠",
+      "category": "صفة"
+    },
+    {
+      "id": 159,
+      "word": "Capable",
+      "translation": "قادر",
+      "example": "Aunt Abeer proved she was 'capable of making a real change' in young people's lives.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💪",
+      "category": "صفة"
+    },
+    {
+      "id": 160,
+      "word": "Charming",
+      "translation": "ساحر",
+      "example": "He is a very 'charming' person.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😊",
+      "category": "صفة"
+    },
+    {
+      "id": 161,
+      "word": "Compassionate",
+      "translation": "عطوف",
+      "example": "The nurse was 'compassionate' and cared for the patients.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=❤️",
+      "category": "صفة"
+    },
+    {
+      "id": 162,
+      "word": "Conceited",
+      "translation": "مغرور",
+      "example": "He's really 'conceited'; he always tells everyone how great he is.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😎",
+      "category": "صفة"
+    },
+    {
+      "id": 163,
+      "word": "Decent",
+      "translation": "لائق",
+      "example": "She's a really 'decent' person.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👍",
+      "category": "صفة"
+    },
+    {
+      "id": 164,
+      "word": "Dedicated",
+      "translation": "مخلص",
+      "example": "My sister Abeer is a 'hard-working and dedicated' nurse who works in a children's hospital.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👩‍⚕️",
+      "category": "صفة"
+    },
+    {
+      "id": 165,
+      "word": "Defensive",
+      "translation": "دفاعي",
+      "example": "You can't say anything critical to her at all or she'll get 'defensive'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🛡️",
+      "category": "صفة"
+    },
+    {
+      "id": 166,
+      "word": "Hypocritical",
+      "translation": "منافق",
+      "example": "His behavior was 'hypocritical' and inconsistent with his words.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎭",
+      "category": "صفة"
+    },
+    {
+      "id": 167,
+      "word": "Idealistic",
+      "translation": "مثالي",
+      "example": "She is 'idealistic' and believes in helping others to achieve a better world.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=✨",
+      "category": "صفة"
+    },
+    {
+      "id": 168,
+      "word": "Immature",
+      "translation": "غير ناضج",
+      "example": "Don't act 'immature' in such a serious situation.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=幼稚",
+      "category": "صفة"
+    },
+    {
+      "id": 169,
+      "word": "Inspirational",
+      "translation": "ملهم",
+      "example": "She has become an 'inspirational' figure for everyone in my family.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌟",
+      "category": "صفة"
+    },
+    {
+      "id": 170,
+      "word": "Modest",
+      "translation": "متواضع",
+      "example": "He's completely 'modest'; you'd never know he's a big star.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😊",
+      "category": "صفة"
+    },
+    {
+      "id": 171,
+      "word": "Passionate",
+      "translation": "عاطفي",
+      "example": "She is 'passionate about animals' and dedicates her time to protecting them.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=❤️‍🔥",
+      "category": "صفة"
+    },
+    {
+      "id": 172,
+      "word": "Pushy",
+      "translation": "لحوح",
+      "example": "She is very 'pushy'; determined to get what she wants.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👉",
+      "category": "صفة"
+    },
+    {
+      "id": 173,
+      "word": "Sincere",
+      "translation": "مخلص",
+      "example": "She is a 'sincere' person in her dealings.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😇",
+      "category": "صفة"
+    },
+    {
+      "id": 174,
+      "word": "Tough",
+      "translation": "صلب",
+      "example": "She can handle the toughest situations; she is very 'tough'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💪",
+      "category": "صفة"
+    },
+    {
+      "id": 175,
+      "word": "Trustworthy",
+      "translation": "جدير بالثقة",
+      "example": "She is completely 'trustworthy'; you can rely on her.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤝",
+      "category": "صفة"
+    },
+    {
+      "id": 176,
+      "word": "Academically gifted",
+      "translation": "موهوب أكاديمياً",
+      "example": "My daughter is 'academically gifted' and excels in all subjects.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎓",
+      "category": "مصطلح"
+    },
+    {
+      "id": 177,
+      "word": "Be challenged enough",
+      "translation": "أن يكون هناك تحدٍ كافٍ",
+      "example": "Students should 'be challenged enough' in the classroom.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎯",
+      "category": "مصطلح"
+    },
+    {
+      "id": 178,
+      "word": "Clash between you and a sibling",
+      "translation": "صدام بين الإخوة",
+      "example": "There was a 'clash between them' due to a difference of opinion.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💥",
+      "category": "مصطلح"
+    },
+    {
+      "id": 179,
+      "word": "Colic",
+      "translation": "مغص",
+      "example": "The baby had 'colic' last night.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👶",
+      "category": "اسم"
+    },
+    {
+      "id": 180,
+      "word": "In the long run",
+      "translation": "على المدى الطويل",
+      "example": "'In the long run', your efforts will pay off.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📈",
+      "category": "مصطلح"
+    },
+    {
+      "id": 181,
+      "word": "Adjust to something",
+      "translation": "يتكيف مع شيء",
+      "example": "It takes some time to 'adjust to' changes in the work environment.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔄",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 182,
+      "word": "Come to terms with something",
+      "translation": "يتقبل شيئًا",
+      "example": "It is difficult to 'come to terms with' a sudden loss.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=😔",
+      "category": "مصطلح"
+    },
+    {
+      "id": 183,
+      "word": "Educate somebody about something",
+      "translation": "يثقف شخصًا حول شيء",
+      "example": "We should 'educate somebody about' the importance of recycling.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎓",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 184,
+      "word": "Put somebody off",
+      "translation": "يثني شخصًا عن",
+      "example": "The color green was 'putting her off' any food.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤢",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 185,
+      "word": "Realise",
+      "translation": "يدرك",
+      "example": "I 'realised' I had forgotten my keys when I got to the door.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💡",
+      "category": "فعل"
+    },
+    {
+      "id": 186,
+      "word": "Vision",
+      "translation": "رؤية",
+      "example": "He has a 'clear vision' for the future.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👁️",
+      "category": "اسم"
+    },
+    {
+      "id": 187,
+      "word": "As a result of",
+      "translation": "نتيجة لـ",
+      "example": "'As a result of' better medicine, people are likely to live to be 100.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=➡️",
+      "category": "عبارة"
+    },
+    {
+      "id": 188,
+      "word": "As a consequence of",
+      "translation": "كنتيجة لـ",
+      "example": "'As a consequence of' pollution, the air quality in the city has deteriorated.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=➡️",
+      "category": "عبارة"
+    },
+    {
+      "id": 189,
+      "word": "Be due to",
+      "translation": "يعود سببه إلى",
+      "example": "This may 'be due to' better education.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎓",
+      "category": "فعل + حرف جر"
+    },
+    {
+      "id": 190,
+      "word": "Give rise to",
+      "translation": "يؤدي إلى",
+      "example": "Global warming is sure to 'give rise to' water shortages in the future.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📈",
+      "category": "مصطلح"
+    },
+    {
+      "id": 191,
+      "word": "Lead to something",
+      "translation": "يؤدي إلى",
+      "example": "Global warming is sure to 'lead to' water shortages.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=➡️",
+      "category": "فعل + حرف جر"
+    },
+    {
+      "id": 192,
+      "word": "Result from",
+      "translation": "ينتج عن",
+      "example": "Her success 'resulted from' her hard work and dedication.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⬅️",
+      "category": "فعل + حرف جر"
+    },
+    {
+      "id": 193,
+      "word": "Result in",
+      "translation": "يؤدي إلى",
+      "example": "The joint efforts 'resulted in' achieving our goals.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=➡️",
+      "category": "فعل + حرف جر"
+    },
+    {
+      "id": 194,
+      "word": "Blistering heat/temperature",
+      "translation": "حرارة شديدة",
+      "example": "There was 'blistering heat' in the desert.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔥",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 195,
+      "word": "Freak weather",
+      "translation": "طقس غريب",
+      "example": "We experienced some 'freak weather' last week.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌪️",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 196,
+      "word": "Gale-force wind",
+      "translation": "رياح عاصفة",
+      "example": "There was a 'gale-force wind' that destroyed trees.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💨",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 197,
+      "word": "Heavy snow/rain",
+      "translation": "ثلوج/أمطار غزيرة",
+      "example": "'Heavy rain' caused floods in the area.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌧️",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 198,
+      "word": "Humidity",
+      "translation": "رطوبة",
+      "example": "The 'humidity' is high today, making the air feel stuffy.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💧",
+      "category": "اسم"
+    },
+    {
+      "id": 199,
+      "word": "Scorching temperature",
+      "translation": "درجة حرارة حارقة",
+      "example": "There was a 'scorching temperature' during the summer.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=☀️",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 200,
+      "word": "Soaring",
+      "translation": "مرتفع جدًا",
+      "example": "The 'soaring temperatures' affected the crops.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📈",
+      "category": "صفة"
+    },
+    {
+      "id": 201,
+      "word": "Sub-zero temperature",
+      "translation": "درجة حرارة تحت الصفر",
+      "example": "The forecast predicted 'sub-zero temperature' tonight.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=❄️",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 202,
+      "word": "Torrential rain",
+      "translation": "أمطار غزيرة",
+      "example": "'Torrential rain' makes our rivers cleaner.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌊",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 203,
+      "word": "Backbone",
+      "translation": "عمود فقري",
+      "example": "Invertebrates are animals without a 'backbone'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🦴",
+      "category": "اسم"
+    },
+    {
+      "id": 204,
+      "word": "Critically endangered",
+      "translation": "مهددة بالانقراض بشدة",
+      "example": "The giant panda is a 'critically endangered' species.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🐼",
+      "category": "صفة + اسم"
+    },
+    {
+      "id": 205,
+      "word": "Crustacean",
+      "translation": "قشريات",
+      "example": "A shrimp is a type of 'crustacean'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🦐",
+      "category": "اسم"
+    },
+    {
+      "id": 206,
+      "word": "Cuddly",
+      "translation": "محبوب",
+      "example": "The giant panda is a 'cuddly' animal.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤗",
+      "category": "صفة"
+    },
+    {
+      "id": 207,
+      "word": "Fin",
+      "translation": "زعنفة",
+      "example": "Sharks have sharp 'fins'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🦈",
+      "category": "اسم"
+    },
+    {
+      "id": 208,
+      "word": "Furry",
+      "translation": "فروي",
+      "example": "A bear is a 'furry' animal.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🐻",
+      "category": "صفة"
+    },
+    {
+      "id": 209,
+      "word": "Invertebrate",
+      "translation": "لافقاري",
+      "example": "'Invertebrates' make up over 90% of living creatures.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🐛",
+      "category": "اسم"
+    },
+    {
+      "id": 210,
+      "word": "Make up",
+      "translation": "يشكل",
+      "example": "Invertebrates 'make up' more than 90% of living creatures.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📊",
+      "category": "فعل مركب"
+    },
+    {
+      "id": 211,
+      "word": "Mammal",
+      "translation": "ثديي",
+      "example": "Dolphins are 'mammals'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🐬",
+      "category": "اسم"
+    },
+    {
+      "id": 212,
+      "word": "Marine",
+      "translation": "بحري",
+      "example": "'Marine' life is rich in diversity.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌊",
+      "category": "صفة"
+    },
+    {
+      "id": 213,
+      "word": "Natural predator",
+      "translation": "مفترس طبيعي",
+      "example": "Lions are the 'natural predator' of herbivores.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🦁",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 214,
+      "word": "Nocturnal",
+      "translation": "ليلي",
+      "example": "The owl is a 'nocturnal' bird.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🦉",
+      "category": "صفة"
+    },
+    {
+      "id": 215,
+      "word": "Pesticide",
+      "translation": "مبيد حشري",
+      "example": "Farmers use 'pesticide' to protect crops.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧪",
+      "category": "اسم"
+    },
+    {
+      "id": 216,
+      "word": "Primate",
+      "translation": "رئيسيات",
+      "example": "A chimpanzee is a type of 'primate'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🐒",
+      "category": "اسم"
+    },
+    {
+      "id": 217,
+      "word": "Reptile",
+      "translation": "زاحف",
+      "example": "Snakes are 'reptiles'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🐍",
+      "category": "اسم"
+    },
+    {
+      "id": 218,
+      "word": "Scale",
+      "translation": "حراشف",
+      "example": "Fish are covered in 'scales'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🐟",
+      "category": "اسم"
+    },
+    {
+      "id": 219,
+      "word": "Skeleton",
+      "translation": "هيكل عظمي",
+      "example": "The backbone is part of the 'skeleton'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💀",
+      "category": "اسم"
+    },
+    {
+      "id": 220,
+      "word": "Slimy",
+      "translation": "لزج",
+      "example": "The frog felt 'slimy'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🐸",
+      "category": "صفة"
+    },
+    {
+      "id": 221,
+      "word": "Solitary",
+      "translation": "منعزل",
+      "example": "Some animals prefer to live a 'solitary' lifestyle.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=👤",
+      "category": "صفة"
+    },
+    {
+      "id": 222,
+      "word": "Habitat loss",
+      "translation": "فقدان الموائل",
+      "example": "'Habitat loss' is one of the main causes of species extinction.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌳",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 223,
+      "word": "Toxic waste",
+      "translation": "نفايات سامة",
+      "example": "'Toxic waste' must be disposed of safely.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=☣️",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 224,
+      "word": "Pollution",
+      "translation": "تلوث",
+      "example": "A lot of 'pollution' is due to the number of cars on our roads.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🏭",
+      "category": "اسم"
+    },
+    {
+      "id": 225,
+      "word": "Vehicle emissions",
+      "translation": "انبعاثات المركبات",
+      "example": "A simple and effective way to reduce 'vehicle emissions' is to drive at a steady speed.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🚗",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 226,
+      "word": "Global warming",
+      "translation": "الاحتباس الحراري",
+      "example": "Many people are concerned about 'global warming'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌍🔥",
+      "category": "اسم مركب"
+    },
+    {
+      "id": 227,
+      "word": "At the moment",
+      "translation": "في هذه اللحظة",
+      "example": "What are you doing 'at the moment'?",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⏳",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 228,
+      "word": "At the time",
+      "translation": "في ذلك الوقت",
+      "example": "I didn't realize its importance 'at the time'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🕰️",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 229,
+      "word": "Currently",
+      "translation": "حالياً",
+      "example": "I am 'currently' working on a new project.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💻",
+      "category": "حال"
+    },
+    {
+      "id": 230,
+      "word": "Earlier today",
+      "translation": "في وقت سابق اليوم",
+      "example": "I spoke with him 'earlier today'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🗣️",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 231,
+      "word": "Ever since",
+      "translation": "منذ ذلك الحين",
+      "example": "'Ever since' I became famous, my life has changed.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌟",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 232,
+      "word": "Every so often",
+      "translation": "بين الحين والآخر",
+      "example": "I visit him 'every so often'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔄",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 233,
+      "word": "For",
+      "translation": "لمدة",
+      "example": "I have lived here 'for' ten years.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔟",
+      "category": "حرف جر"
+    },
+    {
+      "id": 234,
+      "word": "From time to time",
+      "translation": "من وقت لآخر",
+      "example": "I read books 'from time to time'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📚",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 235,
+      "word": "In recent years",
+      "translation": "في السنوات الأخيرة",
+      "example": "'In recent years', the city has seen significant growth.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📈",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 236,
+      "word": "Nowadays",
+      "translation": "في هذه الأيام",
+      "example": "'Nowadays', everyone uses smartphones.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📱",
+      "category": "حال"
+    },
+    {
+      "id": 237,
+      "word": "Once in a while",
+      "translation": "بين الفينة والأخرى",
+      "example": "I go to the cinema 'once in a while'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🎬",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 238,
+      "word": "Recently",
+      "translation": "مؤخراً",
+      "example": "I 'recently' visited France.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🇫🇷",
+      "category": "حال"
+    },
+    {
+      "id": 239,
+      "word": "Right now",
+      "translation": "الآن فوراً",
+      "example": "I am busy 'right now'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⏰",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 240,
+      "word": "Since",
+      "translation": "منذ",
+      "example": "I haven't seen her 'since' last summer.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=☀️",
+      "category": "حرف جر/ظرف"
+    },
+    {
+      "id": 241,
+      "word": "The day before yesterday",
+      "translation": "أول أمس",
+      "example": "I arrived 'the day before yesterday'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📅",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 242,
+      "word": "These days",
+      "translation": "هذه الأيام",
+      "example": "'These days', traveling has become much easier.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=✈️",
+      "category": "عبارة زمنية"
+    },
+    {
+      "id": 243,
+      "word": "Identifying the author’s opinion",
+      "translation": "تحديد رأي الكاتب",
+      "example": "When reading the article, I tried 'identifying the author’s opinion' on the subject.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🤔",
+      "category": "مهارة قراءة"
+    },
+    {
+      "id": 244,
+      "word": "Modal verbs",
+      "translation": "الأفعال المساعدة",
+      "example": "The author used 'modal verbs' like 'We should...' to express their point of view.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📚",
+      "category": "مصطلح نحوي"
+    },
+    {
+      "id": 245,
+      "word": "Phrases of probability",
+      "translation": "عبارات الاحتمالية",
+      "example": "The article includes 'phrases of probability' like 'Possibly...' to indicate uncertainty.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔮",
+      "category": "مصطلح نحوي"
+    },
+    {
+      "id": 246,
+      "word": "Negative inversion",
+      "translation": "الانعكاس السلبي",
+      "example": "The author uses 'negative inversion' to add emphasis to the sentence.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔄",
+      "category": "مصطلح نحوي"
+    },
+    {
+      "id": 247,
+      "word": "Recognising bias",
+      "translation": "التعرف على التحيز",
+      "example": "Learning how to 'recognise bias' in news reports is crucial.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧐",
+      "category": "مهارة كتابة"
+    },
+    {
+      "id": 248,
+      "word": "Gradable adjectives",
+      "translation": "الصفات القابلة للتدرج",
+      "example": "You can use 'very' with 'gradable adjectives' like 'loud'.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📈",
+      "category": "مصطلح نحوي"
+    },
+    {
+      "id": 249,
+      "word": "Intensifier",
+      "translation": "مُكثِّف",
+      "example": "The author used 'intensifiers' to make their writing more interesting.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=💥",
+      "category": "مصطلح نحوي"
+    },
+    {
+      "id": 250,
+      "word": "Present Simple",
+      "translation": "المضارع البسيط",
+      "example": "We use the 'Present Simple' to express daily facts.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🔄",
+      "category": "زمن نحوي"
+    },
+    {
+      "id": 251,
+      "word": "Present Continuous",
+      "translation": "المضارع المستمر",
+      "example": "The 'Present Continuous' is suitable for describing ongoing events at this moment.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🏃",
+      "category": "زمن نحوي"
+    },
+    {
+      "id": 252,
+      "word": "Past Simple",
+      "translation": "الماضي البسيط",
+      "example": "The 'Past Simple' describes events that happened and were completed in the past.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🕰️",
+      "category": "زمن نحوي"
+    },
+    {
+      "id": 253,
+      "word": "Past Continuous",
+      "translation": "الماضي المستمر",
+      "example": "The 'Past Continuous' describes an activity that was in progress when another action interrupted it.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=⏳",
+      "category": "زمن نحوي"
+    },
+    {
+      "id": 254,
+      "word": "Gerunds",
+      "translation": "المصادر (صيغة -ing)",
+      "example": "'Jogging is good for you' is an example of using a 'Gerund' as the subject of a sentence.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🏃‍♂️",
+      "category": "مصطلح نحوي"
+    },
+    {
+      "id": 255,
+      "word": "Infinitives",
+      "translation": "صيغة المصدر",
+      "example": "You should eat fruit 'to reduce' the risk of heart disease.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=📚",
+      "category": "مصطلح نحوي"
+    },
+    {
+      "id": 256,
+      "word": "Generalising",
+      "translation": "التعميم",
+      "example": "When discussing behaviors, you might start with 'On the whole' to describe what is generally true.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🌍",
+      "category": "مهارة كلامية"
+    },
+    {
+      "id": 257,
+      "word": "Opinion essay",
+      "translation": "مقال رأي",
+      "example": "The task required writing an 'opinion essay' on the impact of technology.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=✍️",
+      "category": "نوع كتابة"
+    },
+    {
+      "id": 258,
+      "word": "Analytical essay",
+      "translation": "مقال تحليلي",
+      "example": "An 'analytical essay' should be planned in organized paragraphs.",
+      "imageUrl": "https://placehold.co/80x80/ffffff/38bdf8?text=🧐",
+      "category": "نوع كتابة"
+    }
+  ]
+}
