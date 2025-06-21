@@ -5,7 +5,7 @@
       "title": "تاريخ الأردن",
       "lessonsCount": 17,
       "theme": "sky",
-      "icon": "/public/history.svg",
+      "icon": "history.svg",
       "parts": {
         "part-1": {
           "summaries": [
@@ -101,7 +101,7 @@
       "title": "اللغة العربية",
       "lessonsCount": 2,
       "theme": "amber",
-      "icon": "/public/arabic.svg",
+      "icon": "arabic.svg",
       "parts": {
         "part-1": {
           "summaries": [
@@ -140,7 +140,7 @@
       "title": "اللغة الإنجليزية",
       "lessonsCount": 2,
       "theme": "green",
-      "icon": "/public/english.svg",
+      "icon": "english.svg",
       "parts": {
         "part-1": {
           "summaries": [

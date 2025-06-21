@@ -75,7 +75,7 @@ const isValidThemeKey = (key: string): key is ThemeKey => key in themeClasses;
                                 theme.text
                             ]}>
                                 <div class:list={["w-16 h-16 rounded-full flex items-center justify-center mb-4", theme.iconBg]}>
-                                    <img src={`${subject.icon}`} alt={subject.title} class="w-8 h-8 " />
+                                    <img src={`/public/${subject.icon}`} alt={subject.title} class="w-8 h-8 " />
                                 </div>
                                 {subject.title}
                                 <span class:list={["text-sm font-normal mt-2", theme.lessonsText]}>
