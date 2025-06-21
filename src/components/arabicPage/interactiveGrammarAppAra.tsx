@@ -471,7 +471,7 @@ const GrammarRulePage: React.FC<{ rule: Rule; onReturn: () => void }> = ({ rule,
   };
 
   return (
-    <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main className=" mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
           <FaCrown className="inline-block text-yellow-500 mr-3" />
