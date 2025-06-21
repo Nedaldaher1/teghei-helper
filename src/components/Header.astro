@@ -1,16 +1,71 @@
-<header class="bg-white shadow-md sticky top-0 z-50">
+<header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-            <div class="flex items-center gap-4">
-                <a href="/" class="text-2xl font-black text-sky-600">ملخصاتي</a>
-            </div>
-            <div class=" flex   gap-4">
-                <a href="/subjects" class=" text-slate-600 font-bold text-lg">المخلصات</a>
-                <a href="/" class=" text-slate-600 font-bold text-lg">الصفحة الرئيسية</a>
-           </div>
-            <div class="flex-shrink-0">
-                 <a href="/profile" class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center text-slate-600 font-bold text-lg">ط</a>
-            </div>
+      <div class="flex items-center justify-between h-16">
+        
+        <div class="flex-shrink-0">
+          <a href="/" class="text-2xl font-black text-sky-600">ملخصاتي</a>
         </div>
+  
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="/subjects" class="text-slate-600 font-bold text-lg hover:text-sky-600 transition-colors">الملخصات</a>
+          <a href="/" class="text-slate-600 font-bold text-lg hover:text-sky-600 transition-colors">الصفحة الرئيسية</a>
+        </nav>
+  
+        <div class="flex items-center gap-4">
+          <div class="flex-shrink-0">
+            <a href="/profile" class="w-10 h-10 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center font-bold text-lg">ط</a>
+          </div>
+          
+          <div class="md:hidden">
+            <button id="mobile-menu-button" type="button" class="p-2 text-slate-800 hover:text-sky-600" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">فتح القائمة الرئيسية</span>
+              <svg id="icon-menu" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <svg id="icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+  
+      </div>
     </div>
-</header>
+  
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-lg">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="/subjects" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-sky-600">الملخصات</a>
+        <a href="/" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-sky-600">الصفحة الرئيسية</a>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    // الحصول على العناصر من الصفحة
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconMenu = document.getElementById('icon-menu');
+    const iconClose = document.getElementById('icon-close');
+  
+    // إضافة مستمع لحدث الضغط على زر القائمة
+    if (menuButton) {
+      menuButton.addEventListener('click', () => {
+        // التحقق إذا كانت القائمة مفتوحة أم مغلقة
+        const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+    
+        // عكس قيمة aria-expanded
+        menuButton.setAttribute('aria-expanded', (!isExpanded).toString());
+        
+        // إظهار أو إخفاء القائمة المنسدلة
+        if (mobileMenu) {
+          mobileMenu.classList.toggle('hidden');
+        }
+    
+        // تبديل أيقونة الهمبرغر بأيقونة الإغلاق والعكس
+        if (iconMenu && iconClose) {
+          iconMenu.classList.toggle('hidden');
+          iconClose.classList.toggle('hidden');
+        }
+      });
+    }
+  </script>

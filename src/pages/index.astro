@@ -11,40 +11,28 @@ import ScrollToTopButton from '../components/ScrollToTopButton.tsx';
 ---
 
 <Layout title="مرحباً بكم - منصة ملخصاتي">
-  
-  <section class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden">
-
-    <div class="absolute inset-0 bg-gradient-to-b from-sky-900/90 to-sky-700/80 z-10"></div>
-    
-    <div class="relative z-20 p-4 w-full max-w-4xl mx-auto">
-      <AnimateOnScroll client:load y={20}>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 md:mb-6 text-shadow-lg">
-          <span class="bg-gradient-to-r from-sky-300 to-white bg-clip-text text-transparent">
+    <section class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-sky-900 to-sky-700 z-10"></div>
+        
+        <div class="relative z-20 p-4 w-full max-w-4xl mx-auto">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 md:mb-6 text-shadow-lg text-white">
             مرحباً بكم في منصة ملخصاتي
-          </span>
-        </h1>
-      </AnimateOnScroll>
-      <AnimateOnScroll client:load delay={0.4} className="bg-white/10 backdrop-blur-sm rounded-lg md:rounded-xl p-4 md:p-6 mb-6 md:mb-8 w-full max-w-3xl mx-auto">
-        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-sky-100 leading-relaxed">
-          منصة تعليمية تقدم ملخصات دراسية شاملة ودروسًا مبسطة لجميع المراحل التعليمية، تم تصميمها لمساعدة الطلاب على فهم المواد الدراسية بشكل أعمق وتحقيق التفوق الأكاديمي.
-        </p>
-      </AnimateOnScroll>
-      <AnimateOnScroll client:load delay={0.6} className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
-        <a href="/subjects" class="px-6 py-2 md:px-8 md:py-3 bg-sky-500 hover:bg-sky-600 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-sm md:text-base">
-          ابدأ التصفح
-        </a>
-        <a href="#about" class="px-6 py-2 md:px-8 md:py-3 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300 text-sm md:text-base">
-          تعرف عليّ
-        </a>
-      </AnimateOnScroll>
-    </div>
-    
-    <AnimateOnScroll client:load y={50} className="absolute bottom-0 left-0 w-full z-20">
-      <svg viewBox="0 0 1440 120" class="fill-current text-white">
-        <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
-      </svg>
-    </AnimateOnScroll>
-  </section>
+          </h1>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg md:rounded-xl p-4 md:p-6 mb-6 md:mb-8 w-full max-w-3xl mx-auto">
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-sky-100 leading-relaxed">
+              منصة تعليمية تقدم ملخصات دراسية شاملة ودروسًا مبسطة لجميع المراحل التعليمية، تم تصميمها لمساعدة الطلاب على فهم المواد الدراسية بشكل أعمق وتحقيق التفوق الأكاديمي.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
+            <a href="/subjects" class="px-6 py-2 md:px-8 md:py-3 bg-sky-500 hover:bg-sky-600 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-sm md:text-base">
+              ابدأ التصفح
+            </a>
+            <a href="#about" class="px-6 py-2 md:px-8 md:py-3 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300 text-sm md:text-base">
+              تعرف عليّ
+            </a>
+          </div>
+        </div>
+      </section>
 
   <section id="about" class="py-12 md:py-16 lg:py-24 bg-gradient-to-b from-white to-sky-50">
     <div class="container mx-auto px-4 sm:px-6">
