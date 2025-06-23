@@ -1,71 +1,95 @@
+---
+// src/components/Header.astro
+
+// أفضل ممارسة: تعريف الروابط كبيانات لتجنب التكرار في الكود
+// هذا يسهل على المطور المبتدئ التعديل على الروابط لاحقًا من مكان واحد
+const navLinks = [
+  { href: "/subjects", text: "الملخصات", isFeatured: true },
+  { href: "/", text: "الصفحة الرئيسية", isFeatured: false },
+  { href: "/ContactUs", text: "أتصل بنا", isFeatured: false },
+  { href: "/privacy", text: "سياسة الخصوصية", isFeatured: false },
+  { href: "/terms", text: "الشروط والأحكام", isFeatured: false },
+];
+---
+
 <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        
-        <div class="flex-shrink-0">
-          <a href="/" class="text-2xl font-black text-sky-600">ملخصاتي</a>
-        </div>
-  
-        <nav class="hidden md:flex items-center gap-6">
-          <a href="/subjects" class="text-slate-600 font-bold text-lg hover:text-sky-600 transition-colors">الملخصات</a>
-          <a href="/" class="text-slate-600 font-bold text-lg hover:text-sky-600 transition-colors">الصفحة الرئيسية</a>
-        </nav>
-  
-        <div class="flex items-center gap-4">
-          <div class="flex-shrink-0">
-            <a href="/profile" class="w-10 h-10 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center font-bold text-lg">ط</a>
-          </div>
-          
-          <div class="md:hidden">
-            <button id="mobile-menu-button" type="button" class="p-2 text-slate-800 hover:text-sky-600" aria-controls="mobile-menu" aria-expanded="false">
-              <span class="sr-only">فتح القائمة الرئيسية</span>
-              <svg id="icon-menu" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <svg id="icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-  
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex-shrink-0">
+        <a href="/" class="text-2xl font-black text-sky-600">ملخصاتي</a>
       </div>
-    </div>
-  
-    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-lg">
-      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a href="/subjects" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-sky-600">الملخصات</a>
-        <a href="/" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-sky-600">الصفحة الرئيسية</a>
+
+      <nav class="hidden md:flex items-center gap-6">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "font-bold text-lg transition-colors",
+              { 
+                "text-sky-600 decoration-sky-600": link.isFeatured,
+                "text-slate-600 hover:text-sky-600": !link.isFeatured,
+              }
+            ]}
+          >
+            {link.text}
+          </a>
+        ))}
+      </nav>
+
+      <div class="md:hidden flex items-center">
+        <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-600 hover:text-sky-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg id="hamburger-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
+
     </div>
-  </header>
-  
-  <script>
-    // الحصول على العناصر من الصفحة
-    const menuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const iconMenu = document.getElementById('icon-menu');
-    const iconClose = document.getElementById('icon-close');
-  
-    // إضافة مستمع لحدث الضغط على زر القائمة
-    if (menuButton) {
-      menuButton.addEventListener('click', () => {
-        // التحقق إذا كانت القائمة مفتوحة أم مغلقة
-        const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-    
-        // عكس قيمة aria-expanded
-        menuButton.setAttribute('aria-expanded', (!isExpanded).toString());
-        
-        // إظهار أو إخفاء القائمة المنسدلة
-        if (mobileMenu) {
-          mobileMenu.classList.toggle('hidden');
-        }
-    
-        // تبديل أيقونة الهمبرغر بأيقونة الإغلاق والعكس
-        if (iconMenu && iconClose) {
-          iconMenu.classList.toggle('hidden');
-          iconClose.classList.toggle('hidden');
-        }
-      });
-    }
-  </script>
+  </div>
+
+  <div class="hidden md:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            "block px-3 py-2 rounded-md text-base font-medium transition-colors",
+            { 
+              "bg-sky-100 text-sky-700": link.isFeatured,
+              "text-slate-700 hover:bg-slate-100 hover:text-sky-600": !link.isFeatured,
+            }
+          ]}
+        >
+          {link.text}
+        </a>
+      ))}
+    </div>
+  </div>
+</header>
+
+<script>
+  // هذا السكربت سيتم تنفيذه في المتصفح للتحكم في القائمة
+  const menuButton = document.getElementById('menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  if (menuButton && mobileMenu && hamburgerIcon && closeIcon) {
+    menuButton.addEventListener('click', () => {
+      // تبديل إظهار وإخفاء القائمة
+      mobileMenu.classList.toggle('hidden');
+      
+      // تبديل أيقونة الزر بين الهامبرغر والإغلاق
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+
+      // تحديث حالة aria-expanded للوصولية (Accessibility)
+      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', (!isExpanded).toString());
+    });
+  }
+</script>

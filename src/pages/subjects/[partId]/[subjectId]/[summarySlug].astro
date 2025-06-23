@@ -14,7 +14,7 @@ export const getStaticPaths: GetStaticPaths = () => {
   const paths: {
     params: { partId: string; subjectId: string; summarySlug: string };
   }[] = [];
-  
+
   allData.subjects.forEach((subject) => {
     if (subject.parts) {
       const parts: { [key: string]: { summaries: any[] } } = subject.parts;
@@ -33,7 +33,7 @@ export const getStaticPaths: GetStaticPaths = () => {
       });
     }
   });
-  
+
   return paths;
 };
 
@@ -56,7 +56,8 @@ if (subjectId && summarySlug) {
     const contentModule = await import(
       `../../../../content/${subjectId}/${summarySlug}.json`
     );
-    items = contentModule.default?.subjectData || contentModule.subjectData || [];
+    items =
+      contentModule.default?.subjectData || contentModule.subjectData || [];
   } catch (error) {
     console.error(
       `Could not load content for ${subjectId}/${summarySlug}.json.`,
@@ -78,7 +79,7 @@ const englishDataMapper = (item: any) => ({
   translation: item.translation || "",
   example: item.example,
   imageUrl: item.imageUrl,
-  category: item.category
+  category: item.category,
 });
 
 // دالة تحويل عامة لباقي المواد
@@ -88,73 +89,108 @@ const defaultDataMapper = (item: any) => ({
   translation: item.translation || "",
   example: item.description || item.definition,
   imageUrl: item.imageUrl || item.image,
-  category: item.category || item.type || "عام"
+  category: item.category || item.type || "عام",
 });
 
 // دالة للحصول على اسم نوع المكون
 function getComponentTypeName(type: string) {
   const typeNames: Record<string, string> = {
-    'timeline': 'الخط الزمني',
-    'grammar': 'قواعد تفاعلية (انجليزي)',
-    'cards': 'بطاقات تعليمية',
-    'arabic-grammar': 'قواعد تفاعلية (عربي)'
+    timeline: "الخط الزمني",
+    grammar: "قواعد تفاعلية (انجليزي)",
+    cards: "بطاقات تعليمية",
+    "arabic-grammar": "قواعد تفاعلية (عربي)",
   };
   return typeNames[type] || type;
 }
 
 // إنشاء قائمة الملخصات كـ HTML
-const summariesList = allSummaries.map(summary => {
-  const isCurrent = summary.slug === summarySlug;
-  return `
+const summariesList = allSummaries
+  .map((summary) => {
+    const isCurrent = summary.slug === summarySlug;
+    return `
     <a
       href="/subjects/${partId}/${subjectId}/${summary.slug}"
       class="summary-btn w-full text-right p-3 rounded-lg transition-colors
-        ${isCurrent ? 'bg-sky-600 text-white selected-summary' : 'bg-white hover:bg-sky-100 text-sky-700'}"
+        ${isCurrent ? "bg-sky-600 text-white selected-summary" : "bg-white hover:bg-sky-100 text-sky-700"}"
       data-slug="${summary.slug}"
     >
       <div class="font-medium">${summary.title}</div>
       <div class="text-sm opacity-80">${summary.book}</div>
     </a>
   `;
-}).join('');
-
-
+  })
+  .join("");
 ---
 
 <Layout title={`${summaryTitle} - ${subjectData.title}`}>
   <div class="w-full min-h-screen">
     <div class="text-center py-8 px-4 bg-white">
       <div class="container mx-auto">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-800">{subjectData.title}</h1>
-        <h2 class="text-2xl md:text-3xl font-semibold text-sky-600 mt-2">{summaryTitle}</h2>
-        <p class="text-gray-600 mt-3 max-w-3xl mx-auto">{summaryMetadata.description}</p>
-        <div class="mt-4 inline-block bg-gray-100 px-4 py-2 rounded-full text-sm font-medium text-gray-700">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800">
+          {subjectData.title}
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-semibold text-sky-600 mt-2">
+          {summaryTitle}
+        </h2>
+        <p class="text-gray-600 mt-3 max-w-3xl mx-auto">
+          {summaryMetadata.description}
+        </p>
+        <div
+          class="mt-4 inline-block bg-gray-100 px-4 py-2 rounded-full text-sm font-medium text-gray-700"
+        >
           نوع المحتوى: {getComponentTypeName(summaryMetadata.componentType)}
         </div>
       </div>
     </div>
 
-
     <div class="interactive-content-wrapper">
-      {summaryMetadata.componentType === 'timeline' && (
-      <TimelineView client:visible summaryTitle={summaryTitle} book={book} items={items} />
-    )}
-    {summaryMetadata.componentType === 'grammar' && (
-      <InteractiveGrammarApp client:visible summaryTitle={summaryTitle} items={items} />
-    )}
-    {/* --- الإضافة تبدأ هنا --- */}
-    {summaryMetadata.componentType === 'arabic-grammar' && (
-      <InteractiveGrammarAppara client:visible title={summaryTitle} data={{ subjectData: items }} />
-    )}
-    {/* --- الإضافة تنتهي هنا --- */}
-    {(summaryMetadata.componentType === 'cards' || !['timeline', 'grammar', 'arabic-grammar'].includes(summaryMetadata.componentType)) && (
-      <VocabularyCardsApp
-        client:visible
-        subjectData={items}
-        appTitle={summaryTitle}
-        dataMapper={subjectId === "english-language" ? englishDataMapper : defaultDataMapper}
-      />
-    )}
+      {
+        summaryMetadata.componentType === "timeline" && (
+          <TimelineView
+            client:visible
+            summaryTitle={summaryTitle}
+            book={book}
+            items={items}
+          />
+        )
+      }
+      {
+        summaryMetadata.componentType === "grammar" && (
+          <InteractiveGrammarApp
+            client:visible
+            summaryTitle={summaryTitle}
+            items={items}
+          />
+        )
+      }
+      {/* --- الإضافة تبدأ هنا --- */}
+      {
+        summaryMetadata.componentType === "arabic-grammar" && (
+          <InteractiveGrammarAppara
+            client:visible
+            title={summaryTitle}
+            data={{ subjectData: items }}
+          />
+        )
+      }
+      {/* --- الإضافة تنتهي هنا --- */}
+      {
+        (summaryMetadata.componentType === "cards" ||
+          !["timeline", "grammar", "arabic-grammar"].includes(
+            summaryMetadata.componentType,
+          )) && (
+          <VocabularyCardsApp
+            client:visible
+            subjectData={items}
+            appTitle={summaryTitle}
+            dataMapper={
+              subjectId === "english-language"
+                ? englishDataMapper
+                : defaultDataMapper
+            }
+          />
+        )
+      }
     </div>
 
     <div class="text-center my-12">
@@ -162,8 +198,17 @@ const summariesList = allSummaries.map(summary => {
         href={`/subjects/${partId}/${subjectId}`}
         class="inline-flex items-center bg-gray-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors"
       >
-        <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        <svg
+          class="w-5 h-5 mr-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
         </svg>
         العودة إلى قائمة الملخصات
       </a>
@@ -182,7 +227,9 @@ const summariesList = allSummaries.map(summary => {
     }
     .summary-btn:hover:not(.selected-summary) {
       transform: translateY(-3px);
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
   </style>
 </Layout>

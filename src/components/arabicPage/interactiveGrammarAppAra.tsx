@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// تمت إضافة أيقونات جديدة لاستخدامها في واجهة الاختيار
+// تم تعديل مسار الاستيراد لإصلاح خطأ في التحويل البرمجي
 import { FaBook, FaCrown, FaStar, FaLightbulb, FaCheckCircle, FaQuoteLeft, FaQuoteRight, FaPlay, FaMagic, FaStepForward, FaArrowRight, FaArrowLeft, FaListAlt, FaArrowCircleLeft } from 'react-icons/fa';
 
 // --- INTERFACES ---
@@ -132,7 +132,7 @@ const DefinitionSection: React.FC<{ definition: Definition }> = ({ definition })
             <p className="text-xl text-gray-800 leading-relaxed text-center">
               {definition.example.sentence.map((part, idx) => (
                 <span key={idx} className={part.class || ''}>
-                 {''} {part.text}
+                 {' '} {part.text}
                 </span>
               ))}
             </p>
@@ -422,7 +422,7 @@ const IrabExercisesBlock: React.FC<{
 };
 
 // --- [تعديل] MAIN PAGE COMPONENT (يعرض قاعدة واحدة) ---
-// تم إضافة onReturn كخاصية (prop) للتعامل مع زر العودة
+// تم تعديل هذا القسم لاستغلال المساحة بشكل أفضل
 const GrammarRulePage: React.FC<{ rule: Rule; onReturn: () => void }> = ({ rule, onReturn }) => {
   // إعادة تعيين الحالات عند تغيير القاعدة المعروضة
   const [currentVideoId, setCurrentVideoId] = useState('');
@@ -472,31 +472,48 @@ const GrammarRulePage: React.FC<{ rule: Rule; onReturn: () => void }> = ({ rule,
 
   return (
     <main className=" mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-center mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-          <FaCrown className="inline-block text-yellow-500 mr-3" />
-          {rule.title}
-        </h1>
-        
-        <div className="bg-white p-6 rounded-xl shadow-sm max-w-3xl mx-auto mb-6">
-          <p className="text-lg text-gray-600 leading-relaxed">{rule.intro}</p>
-        </div>
-        
-        {rule.points && (
-          <div className="max-w-2xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {rule.points.map((pt, i) => (
-                <div key={i} className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex items-start hover:shadow-md transition-shadow">
-                  <span className="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-2 flex-shrink-0">
-                    {i + 1}
-                  </span>
-                  <p className="text-gray-700">{pt}</p>
-                </div>
-              ))}
-            </div>
+      {/* --- بداية القسم المعدل --- */}
+      <div className="mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 md:p-8 shadow-lg">
+          <div className="text-center mb-8">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
+                  <FaCrown className="inline-block text-yellow-500 mr-3" />
+                  {rule.title}
+              </h1>
           </div>
-        )}
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+              {/* المقدمة في العمود الأيمن */}
+              <div className="bg-white p-6 rounded-2xl shadow-md border-r-4 border-indigo-300 h-full">
+                   <h2 className="text-2xl font-bold text-indigo-800 mb-4 flex items-center">
+                      <FaLightbulb className="ml-2 text-yellow-500"/>
+                      شرح القاعدة
+                   </h2>
+                  <p className="text-gray-700 leading-relaxed text-lg">{rule.intro}</p>
+              </div>
+
+              {/* النقاط الأساسية في العمود الأيسر */}
+              {rule.points && (
+                  <div className="bg-white p-6 rounded-2xl shadow-md border-l-4 border-green-300 h-full">
+                       <h2 className="text-2xl font-bold text-green-800 mb-4 flex items-center">
+                          <FaCheckCircle className="ml-2 text-green-500"/>
+                          نقاط أساسية
+                       </h2>
+                      <ul className="space-y-4">
+                          {rule.points.map((pt, i) => (
+                              <li key={i} className="flex items-start">
+                                  <span className="bg-green-100 text-green-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0 font-bold">
+                                      {i + 1}
+                                  </span>
+                                  <span className="text-gray-700 pt-1">{pt}</span>
+                              </li>
+                          ))}
+                      </ul>
+                  </div>
+              )}
+          </div>
       </div>
+      {/* --- نهاية القسم المعدل --- */}
+
 
       {rule.definition && <DefinitionSection definition={rule.definition} />}
       {rule.sections && <SectionsBlock sections={rule.sections} />}

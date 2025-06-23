@@ -10,15 +10,18 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.8",
     "@types/react": "^19.1.7",
     "@types/react-dom": "^19.1.6",
     "aos": "^2.3.4",
     "astro": "^5.9.2",
     "chart.js": "^4.5.0",
+    "emailjs": "^4.0.3",
     "framer-motion": "^12.18.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0",
     "tailwindcss": "^4.1.8"
   },
